@@ -1,0 +1,7 @@
+\paragraph{Sybil Attack}
+Een fundamenteel probleem bij een implementatie van \acrshort{PoS}, zoals beschreven door \citep{kiayias2017ouroboros}, is het simuleren van een leiderschapsverkiezing. Om een eerlijke, willekeurige verkiezing onder deelnemers van het netwerk te hebben is het nodig om een zekere mate van wanorde te introduceren. Mechanismes die benodigd zijn om deze wanorde te introduceren zijn gevoelig voor beïnvloedingen van kwaadwillende deelnemers in het netwerk.
+
+\paragraph{Eclipse attack}
+In het Kademlia netwerk is het mogelijk om een eclipse attack uit te voeren, maar wel lastig. In \cite{cardano_wiki:csl_app_level} wordt uitgelegd hoe dit mogelijk zou zijn. Door de manier waarop het netwerk ingedeeld is, is het mogelijk, indien het netwerk constant blijft, om door veel nodes in het netwerk aan te maken de IDs rondom een bestaande node te bezitten, waardoor de communicatie met deze node te manipuleren is. Om dit tegen te gaan heeft Monero een uitbreiding gerealiseerd op het Kademlia protocol, waarbij node IDs vervangen worden door HashIds. 
+
+Een HashId is een binaire reeks van 32 bytes bestaande uit twee onderdelen. De nonce, een willekeurige 14 reeks aan bytes binaire reeks, en hashing data dat gegenereerd wordt aan de hand van de zogenaamde DerivingKey, een PBKDF2 hash dat gebruik maakt van HMAC (Hash-based Message Authentication Code) en een Salt, een SHA-512 hash \citep[P2P Layer, Addressing]{cardano_wiki}.

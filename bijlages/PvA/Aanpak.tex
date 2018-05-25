@@ -1,0 +1,49 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[parfill]{parskip}
+\usepackage[dutch]{babel}
+\usepackage[natbibapa]{apacite}
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+\begin{document}
+  \begin{titlepage}
+    \begin{figure}
+      \centering
+      \includegraphics[width=90mm]{quintor}
+      \vspace{1cm}    
+    \end{figure}
+
+    {\huge\centering Plan van Aanpak \par}
+    \vspace{1cm}    
+    {\large\bfseries\centering
+      Het opzetten van een peer-to-peer netwerk met identiteit \\
+      management door middel van Blockchain technologie
+    \par}
+
+    \vfill
+
+    \begin{flushleft}
+      Jeffrey van Hoven \\
+      14068265@student.hhs.nl \\
+      \today
+    \end{flushleft}
+  \end{titlepage}
+
+  \newpage
+  \tableofcontents
+
+  \include{pages/inleiding}
+  \include{pages/aanleiding}
+  \include{pages/probleemanalyse}
+  \include{pages/doelstelling}
+  \include{pages/resultaten}
+  \include{pages/aanpak}
+  \include{pages/planning}
+
+  \bibliographystyle{apacite}  
+  \setlength\bibsep{\baselineskip}  
+  \bibliography{bronnen}
+\end{document}
+

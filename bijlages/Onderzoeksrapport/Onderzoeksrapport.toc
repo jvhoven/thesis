@@ -1,0 +1,47 @@
+\babel@toc {dutch}{}
+\contentsline {chapter}{\numberline {1}Inleiding}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Probleemstelling}{4}{chapter.2}
+\contentsline {chapter}{\numberline {3}Opzet}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Resultaten}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Soorten netwerken}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Proof of Work}{10}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Proof of Stake}{11}{subsection.4.1.2}
+\contentsline {paragraph}{Cardano}{11}{subsection.4.1.2}
+\contentsline {paragraph}{EOS}{11}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Gevaren}{12}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Eclipse Attack}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Majority Attack}{12}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}\acrfull {DoS}}{12}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Sybil Attack}{12}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Double spending}{13}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Nothing at Stake}{13}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Identiteit}{14}{section.4.3}
+\contentsline {section}{\numberline {4.4}Bitcoin}{15}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Functionaliteit}{15}{subsection.4.4.1}
+\contentsline {paragraph}{Architectuur}{15}{subsection.4.4.1}
+\contentsline {paragraph}{Discovery protocol}{16}{figure.caption.9}
+\contentsline {paragraph}{Informatie propagatie}{16}{figure.caption.9}
+\contentsline {subsection}{\numberline {4.4.2}Gevaren}{16}{subsection.4.4.2}
+\contentsline {paragraph}{Majority Attack}{16}{subsection.4.4.2}
+\contentsline {paragraph}{Denial of Service}{16}{subsection.4.4.2}
+\contentsline {paragraph}{Eclipse Attack}{17}{subsection.4.4.2}
+\contentsline {paragraph}{Double spending}{17}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Identiteit}{17}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Cardano}{18}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Functionaliteit}{18}{subsection.4.5.1}
+\contentsline {paragraph}{Architectuur}{18}{subsection.4.5.1}
+\contentsline {paragraph}{Discovery protocol}{18}{subsection.4.5.1}
+\contentsline {subsubsection}{Informatie propagatie}{18}{figure.caption.11}
+\contentsline {subsection}{\numberline {4.5.2}Gevaren}{19}{subsection.4.5.2}
+\contentsline {paragraph}{Sybil Attack}{19}{subsection.4.5.2}
+\contentsline {paragraph}{Eclipse attack}{19}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Identiteit}{19}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}EOS}{20}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Functionaliteit}{20}{subsection.4.6.1}
+\contentsline {paragraph}{Architectuur}{20}{subsection.4.6.1}
+\contentsline {paragraph}{Discovery protocol}{20}{subsection.4.6.1}
+\contentsline {subsubsection}{Informatie propagatie}{20}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Gevaren}{20}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Identiteit}{20}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {5}Conclusie}{21}{chapter.5}
+\contentsline {chapter}{\numberline {6}Bibliografie}{22}{chapter.6}

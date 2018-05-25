@@ -1,0 +1,83 @@
+\newpage
+\chapter{Resultaten}
+
+\input{onderzoek/deelvraag_1}
+
+\newpage
+\section{Gevaren}
+
+Wanneer deelnemers uitmaken van een grootschalig netwerk die niet gecontroleerd wordt door een centrale autoriteit kan het voorkomen dat deelnemers zich misdragen. In juli 2016 is Ethereum opgesplitst in twee partities die dezelfde valuta hanteren; \textit{Ethereum} en \textit{Ethereum Classic}. Dit is veroorzaakt door een kwaadwillende deelnemer in het netwerk die door een bug in het systeem geld naar zichzelf toe kon sturen. Dit heeft ertoe geleid dat veel gebruikers mogelijk een aanzienlijk verlies geleden hebben, waaronder veel ontwikkelaars van Ethereum. Om dit verlies op te lossen werd er een hard-fork voorgesteld die Ethereums code aanpast waarbij de transacties van de kwaadwillende deelnemer teruggedraaid werden \citep{kiffer2017stick}. 
+
+Dit illustreert een van de mogelijke manieren waarop een kwaadwillende gebruiker het systeem kan ondermijnen. Om een duidelijk overzicht te geven van de gevaren binnen een gedecentralizeerd peer-to-peer systeem wordt er onderzocht welke technieken toegepast worden om aanvallen van een kwaadwillende deelnemer van het netwerk tegen te gaan.
+
+\subsection{Eclipse Attack}
+Een aanval op het peer-to-peer netwerk waarbij er controle over een deelnemer zijn toegang tot informatie gelimiteerd, of zelfs gemanipuleerd wordt. Met de juiste manipulatie van het peer-to-peer netwerk kan er informatie verduistert worden zodat een goedwillende deelnemer aan het netwerk alleen maar kan communiceren met kwaadwillende deelnemers. Dit kan leiden tot \gls{block_races}, \gls{selfish_mining} en \gls{0-confirmation_double_spending} \citep{heilman2015eclipse}.
+
+\subsection{Majority Attack}
+Een aanval waarbij één deelnemer de richting van het netwerk bepaald door het bezitten van 51\% de \gls{voting_power}. In het geval van \acrlong{PoW} betekend dit dat de kwaadwillende deelnemer 51\% van de totale rekenkracht nodig heeft om deze aanval uit te voeren. Dit stelt de kwaadwillende deelnemer in staat om het netwerk te manipuleren en kan leiden tot \gls{0-confirmation_double_spending}.
+
+\subsection{\acrfull{DoS}}
+Een algemene benaming voor een collectie van mogelijke oorzaken voor een bewuste verstoring van de services die het peer-to-peer netwerk faciliteert. Dit kan op meerdere manieren optreden, bijvoorbeeld door het invoegen van heel veel transacties in één block, zodat het lang duurt voordat het peer-to-peer netwerk het nieuwe block heeft opgenomen.
+
+\subsection{Sybil Attack}
+Een aanval waarbij een deelnemer meerdere virtuele deelnemers creëert in het netwerk waarbij de gecreëerde deelnemers het verkiezingsproces kunnen verstoren door verkeerde informatie door te geven in het netwerk, zoals positief stemmen voor een malafide transactie \citep{conti2017survey}.
+
+\clearpage
+
+\subsection{Double spending}
+Bij Creditcard-gebaseerde betalingen wordt er eerlijkheid bereikt door het bestaan van een bank of een andere vertrouwde tussenpersoon (e.g. Paypal). Hierbij wordt de tussenpersoon vertrouwd om te controleren dat diegene die een betaling doet aan een derde partij het geld niet al heeft uitgegeven \citep{karame2012two}. In gedecentralizeerde systemen, waarbij er geen vertrouwe tussenpersoon aanwezig is, staat dit bekend als het \textit{double spending} probleem, waarbij het mogelijk is om \glspl{token} die reeds uitgegeven zijn (i.e. opgenomen in een block) nogmaals gebruikt wordt om een transactie uit te voeren. 
+
+\subsection{Nothing at Stake}
+Wanneer er een \gls{fork} ontstaat is de optimale strategie elke replica van de blockchain te valideren, zodat de diegene die het validatie proces uitvoert nog steeds uitbetaald krijgt, ongeacht of de \gls{fork} geaccepteerd wordt of niet.
+
+\newpage
+
+\section{Identiteit}
+
+Blockchain kan een zeker mate van privacy garanderen door de public en private keys, wat ervoor zorgt dat een gebruiker niet zijn echte identiteit hoeft te hanteren om met het systeem te interacteren. Echter, \cite{meiklejohn2013fistful} toont aan dat blockchain niet de transactionele privacy kan waarborgen omdat de waarden van alle transacties en saldo van elke public key openbaar inzichtbaar zijn.
+
+\citet{Okamoto:1991:UEC:646756.705374} beschrijft zes criteria waaraan de ideale implementatie van elektronisch geld moet voldoen. In het bijzonder worden er twee criteria genoemd:
+
+\begin{itemize}
+  \item \textbf{Untraceability:} voor elke inkomende transactie hebben alle mogelijke afzenders gelijke kansen om geïdentificeerd te worden als verstuurder. 
+  
+  \item \textbf{Unlinkability:} voor elke twee uitgaande transacties moet het onmogelijk zijn om aan te tonen dat ze naar dezelfde persoon verstuurd zijn.
+\end{itemize}
+
+\newpage
+
+\section{Bitcoin}
+\subsection{Functionaliteit}
+\input{onderzoek/implementaties/bitcoin}
+\subsection{Gevaren}
+\input{onderzoek/gevaren/bitcoin}
+\subsection{Identiteit}
+\input{onderzoek/identiteit/bitcoin}
+
+\newpage
+
+\section{Cardano}
+\subsection{Functionaliteit}
+\input{onderzoek/implementaties/cardano}
+\subsection{Gevaren}
+\input{onderzoek/gevaren/cardano}
+\subsection{Identiteit}
+\input{onderzoek/identiteit/cardano}
+
+\newpage
+
+\section{EOS}
+\subsection{Functionaliteit}
+\input{onderzoek/implementaties/eos}
+\subsection{Gevaren}
+\input{onderzoek/gevaren/eos}
+\subsection{Identiteit}
+\input{onderzoek/identiteit/eos}
+
+\section{Monero}
+\subsection{Functionaliteit}
+\input{onderzoek/implementaties/monero}
+\subsection{Gevaren}
+\input{onderzoek/gevaren/monero}
+\subsection{Identiteit}
+\input{onderzoek/identiteit/monero}

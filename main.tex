@@ -1,0 +1,74 @@
+\documentclass{Quintorthesis} 
+
+\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage[export]{adjustbox}
+\usepackage{booktabs}
+\usepackage{graphicx, hyperref, parskip, subcaption, float, fancyhdr, amsmath, mathtools, wrapfig, color, titlesec }
+\usepackage[dutch]{babel}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage[font={small, it}]{caption}
+\usepackage[toc,page]{appendix}
+\usepackage[natbibapa]{apacite}
+\usepackage{pdfpages}
+\usepackage[acronym]{glossaries}
+\usepackage{glossary-mcols}
+\usepackage{bookmark}
+
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
+\newcommand{\R}{\mathbb{R}}
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+
+\setglossarystyle{mcolindexgroup}
+\makenoidxglossaries
+\loadglsentries{begrippen}
+
+\begin{document}
+  \baselineskip=15pt plus1pt
+  \parskip=15pt
+  \setcounter{secnumdepth}{2}
+  \setcounter{tocdepth}{3}
+
+  \renewcommand\appendixpagename{Bijlages}
+  \renewcommand\appendixtocname{Bijlages}
+  \newcommand{\hsp}{\hspace{10pt}}
+  \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{quintorred}{|}\hsp}{0pt}{\LARGE\bfseries}
+  \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+  \titlespacing*{\paragraph}{0pt}{0pt}{10pt}
+
+  \begin{titlepage}
+    \documenttype{Onderzoek naar} 
+    \title{Gedistribueerde netwerken en identiteits management binnen Blockchain technologie}
+    \author{Jeffrey van Hoven}
+    \date{\today}
+    \maketitle
+  \end{titlepage}
+
+  % Start of Roman Pages. Here goes the preface, definitions 
+  % and abstract
+  \begin{romanpages}
+    \include{pages/voorwoord}
+    \tableofcontents     
+    \listoffigures              
+    \listoftables
+    \printnoidxglossary[title=Woordenlijst]
+    \printnoidxglossary[title=Afkortingen, type=\acronymtype]
+  \end{romanpages}
+
+  \include{pages/inleiding}
+  %\include{pages/organisatie}
+  \include{pages/opdracht}
+  %\include{pages/aanpak}
+  \include{pages/vooronderzoek}
+
+  %next line adds the Bibliography to the contents page
+  \addcontentsline{toc}{chapter}{Literatuurlijst}
+
+  \bibliographystyle{apacite}  
+  \setlength\bibsep{\baselineskip}  
+  \bibliography{referenties}
+
+  %now enable appendix numbering format and include any appendices
+  \include{pages/bijlages}
+\end{document}

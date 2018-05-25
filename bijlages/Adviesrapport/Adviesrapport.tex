@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, hyperref, parskip}
+\usepackage[dutch]{babel}
+
+\graphicspath{ {images/} }
+
+\renewcommand{\contentsname}{Inhoudsopgave}
+
+\includeonly{
+  pages/01_Inleiding,
+  pages/02_Onderzoeksopzet,
+  pages/03_Maatregelen,
+  pages/04_Conclusie,
+  pages/05_Bronnen
+}
+
+\begin{document}
+  
+  \begin{titlepage}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{quintor}
+      \vspace{1cm}    
+    \end{figure}
+
+    {\huge\centering Adviesrapport \par}
+    \vspace{1cm}    
+    {\large\bfseries\centering
+      Het opzetten van een peer-to-peer netwerk met identiteit \\
+      management door middel van Blockchain technologie
+    \par}
+
+    \vfill
+
+    \begin{flushleft}
+      Jeffrey van Hoven \\
+      14068265@student.hhs.nl \\
+      \today
+    \end{flushleft}
+  \end{titlepage}
+
+  \include{pages/01_Inleiding}
+  \include{pages/00_Samenvatting}
+
+  \newpage
+  \tableofcontents
+
+  \include{pages/02_Onderzoeksopzet}
+  \include{pages/03_Maatregelen}
+  \include{pages/04_Conclusie}
+  \include{pages/05_Bronnen}
+  
+\end{document}

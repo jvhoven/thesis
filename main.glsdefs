@@ -1,0 +1,1260 @@
+\ifglsentryexists{bloom_filter}{}%
+{%
+\gls@defglossaryentry{bloom_filter}%
+{%
+name={bloom filter},%
+sort={bloom filter},%
+type={main},%
+first={bloom filter},%
+firstplural={bloom filters},%
+text={bloom filter},%
+plural={bloom filters},%
+description={Een datastructuur dat gebruikt wordt om efficient na te gaan of een item in een set zit.},%
+descriptionplural={Een datastructuur dat gebruikt wordt om efficient na te gaan of een item in een set zit.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{0-confirmation_double_spending}{}%
+{%
+\gls@defglossaryentry{0-confirmation_double_spending}%
+{%
+name={0-confirmation double spending},%
+sort={0-confirmation double spending},%
+type={main},%
+first={0-confirmation double spending},%
+firstplural={0-confirmation double spendings},%
+text={0-confirmation double spending},%
+plural={0-confirmation double spendings},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dapps}{}%
+{%
+\gls@defglossaryentry{dapps}%
+{%
+name={DApps},%
+sort={DApps},%
+type={main},%
+first={DApps},%
+firstplural={DAppss},%
+text={DApps},%
+plural={DAppss},%
+description={Distributed Applications -- Applicaties die gebruik maken van een Blockchain technologie, bijv. Ethereum, om op gedecentraliseerde wijze te interacteren met gebruikers},%
+descriptionplural={Distributed Applications -- Applicaties die gebruik maken van een Blockchain technologie, bijv. Ethereum, om op gedecentraliseerde wijze te interacteren met gebruikers},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{smart_contract}{}%
+{%
+\gls@defglossaryentry{smart_contract}%
+{%
+name={Smart Contract},%
+sort={Smart Contract},%
+type={main},%
+first={Smart Contract},%
+firstplural={Smart Contracts},%
+text={Smart Contract},%
+plural={Smart Contracts},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{double_spending}{}%
+{%
+\gls@defglossaryentry{double_spending}%
+{%
+name={double spending},%
+sort={double spending},%
+type={main},%
+first={double spending},%
+firstplural={double spendings},%
+text={double spending},%
+plural={double spendings},%
+description={Een aanval waarbij een reeds uitgegeven token nogmaals uitgegeven wordt},%
+descriptionplural={Een aanval waarbij een reeds uitgegeven token nogmaals uitgegeven wordt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{miner}{}%
+{%
+\gls@defglossaryentry{miner}%
+{%
+name={miner},%
+sort={miner},%
+type={main},%
+first={miner},%
+firstplural={miners},%
+text={miner},%
+plural={miners},%
+description={Doorgaans een referentie naar iemand die het mining proces uitvoert},%
+descriptionplural={Doorgaans een referentie naar iemand die het mining proces uitvoert},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bootstrap_node}{}%
+{%
+\gls@defglossaryentry{bootstrap_node}%
+{%
+name={bootstrap node},%
+sort={bootstrap node},%
+type={main},%
+first={bootstrap node},%
+firstplural={bootstrap nodes},%
+text={bootstrap node},%
+plural={bootstrap nodes},%
+description={Gebruikers in het netwerk die constant actief zijn en gehanteerd worden als vast connectiepunt om het netwerk binnen te komen},%
+descriptionplural={Gebruikers in het netwerk die constant actief zijn en gehanteerd worden als vast connectiepunt om het netwerk binnen te komen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{minting}{}%
+{%
+\gls@defglossaryentry{minting}%
+{%
+name={minting},%
+sort={minting},%
+type={main},%
+first={minting},%
+firstplural={mintings},%
+text={minting},%
+plural={mintings},%
+description={Een benaming voor de manier waarop een nieuw block gegenereerd wordt bij een Proof of Stake algoritme},%
+descriptionplural={Een benaming voor de manier waarop een nieuw block gegenereerd wordt bij een Proof of Stake algoritme},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{account}{}%
+{%
+\gls@defglossaryentry{account}%
+{%
+name={account},%
+sort={account},%
+type={main},%
+first={account},%
+firstplural={accounts},%
+text={account},%
+plural={accounts},%
+description={Een combinatie van public- en private keys waarbij de public key als identificatie gebruikt wordt},%
+descriptionplural={Een combinatie van public- en private keys waarbij de public key als identificatie gebruikt wordt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{block_races}{}%
+{%
+\gls@defglossaryentry{block_races}%
+{%
+name={block races},%
+sort={block races},%
+type={main},%
+first={block races},%
+firstplural={block racess},%
+text={block races},%
+plural={block racess},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{slot_leader}{}%
+{%
+\gls@defglossaryentry{slot_leader}%
+{%
+name={slot leader},%
+sort={slot leader},%
+type={main},%
+first={slot leader},%
+firstplural={slot leaders},%
+text={slot leader},%
+plural={slot leaders},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{elector}{}%
+{%
+\gls@defglossaryentry{elector}%
+{%
+name={elector},%
+sort={elector},%
+type={main},%
+first={elector},%
+firstplural={electors},%
+text={elector},%
+plural={electors},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nonce}{}%
+{%
+\gls@defglossaryentry{nonce}%
+{%
+name={nonce},%
+sort={nonce},%
+type={main},%
+first={nonce},%
+firstplural={nonces},%
+text={nonce},%
+plural={nonces},%
+description={Een 4-byte veld waarvan de waarde ingesteld wordt zodat de hash van een block een reeks van nullen bevat. De rest van de inhoud van een block staat hierdoor vast},%
+descriptionplural={Een 4-byte veld waarvan de waarde ingesteld wordt zodat de hash van een block een reeks van nullen bevat. De rest van de inhoud van een block staat hierdoor vast},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{stake}{}%
+{%
+\gls@defglossaryentry{stake}%
+{%
+name={stake},%
+sort={stake},%
+type={main},%
+first={stake},%
+firstplural={stakes},%
+text={stake},%
+plural={stakes},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{voting_power}{}%
+{%
+\gls@defglossaryentry{voting_power}%
+{%
+name={voting power},%
+sort={voting power},%
+type={main},%
+first={voting power},%
+firstplural={voting powers},%
+text={voting power},%
+plural={voting powers},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{peer_list}{}%
+{%
+\gls@defglossaryentry{peer_list}%
+{%
+name={peer list},%
+sort={peer list},%
+type={main},%
+first={peer list},%
+firstplural={peer lists},%
+text={peer list},%
+plural={peer lists},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wallet}{}%
+{%
+\gls@defglossaryentry{wallet}%
+{%
+name={wallet},%
+sort={wallet},%
+type={main},%
+first={wallet},%
+firstplural={wallets},%
+text={wallet},%
+plural={wallets},%
+description={Software die alle adressen en secret keys bijhoudt. Het wordt gebruikt om tokens to versturen, ontvangen en op te slaan},%
+descriptionplural={Software die alle adressen en secret keys bijhoudt. Het wordt gebruikt om tokens to versturen, ontvangen en op te slaan},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fork}{}%
+{%
+\gls@defglossaryentry{fork}%
+{%
+name={fork},%
+sort={fork},%
+type={main},%
+first={fork},%
+firstplural={forks},%
+text={fork},%
+plural={forks},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wallet_node}{}%
+{%
+\gls@defglossaryentry{wallet_node}%
+{%
+name={wallet (node)},%
+sort={wallet (node)},%
+type={main},%
+first={wallet (node)},%
+firstplural={wallets},%
+text={wallet (node)},%
+plural={wallets},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{full_node}{}%
+{%
+\gls@defglossaryentry{full_node}%
+{%
+name={full node},%
+sort={full node},%
+type={main},%
+first={full node},%
+firstplural={full nodes},%
+text={full node},%
+plural={full nodes},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mining_node}{}%
+{%
+\gls@defglossaryentry{mining_node}%
+{%
+name={mining node},%
+sort={mining node},%
+type={main},%
+first={mining node},%
+firstplural={mining nodes},%
+text={mining node},%
+plural={mining nodes},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{selfish_mining}{}%
+{%
+\gls@defglossaryentry{selfish_mining}%
+{%
+name={selfish mining},%
+sort={selfish mining},%
+type={main},%
+first={selfish mining},%
+firstplural={selfish minings},%
+text={selfish mining},%
+plural={selfish minings},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{token}{}%
+{%
+\gls@defglossaryentry{token}%
+{%
+name={token},%
+sort={token},%
+type={main},%
+first={token},%
+firstplural={tokens},%
+text={token},%
+plural={tokens},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{difficulty}{}%
+{%
+\gls@defglossaryentry{difficulty}%
+{%
+name={difficulty},%
+sort={difficulty},%
+type={main},%
+first={difficulty},%
+firstplural={difficultys},%
+text={difficulty},%
+plural={difficultys},%
+description={Een netwerk setting dat beïnvloed hoe moeilijk om het proof-of-work op te lossen},%
+descriptionplural={Een netwerk setting dat beïnvloed hoe moeilijk om het proof-of-work op te lossen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{node}{}%
+{%
+\gls@defglossaryentry{node}%
+{%
+name={node},%
+sort={node},%
+type={main},%
+first={node},%
+firstplural={nodes},%
+text={node},%
+plural={nodes},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{UTXO}{}%
+{%
+\gls@defglossaryentry{UTXO}%
+{%
+name={UTXO-model},%
+sort={UTXO-model},%
+type={main},%
+first={UTXO-model},%
+firstplural={UTXO-models},%
+text={UTXO-model},%
+plural={UTXO-models},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{distributed_hash_table}{}%
+{%
+\gls@defglossaryentry{distributed_hash_table}%
+{%
+name={Distributed Hash Table},%
+sort={Distributed Hash Table},%
+type={main},%
+first={Distributed Hash Table},%
+firstplural={Distributed Hash Tables},%
+text={Distributed Hash Table},%
+plural={Distributed Hash Tables},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{soft_fork}{}%
+{%
+\gls@defglossaryentry{soft_fork}%
+{%
+name={Soft Fork},%
+sort={Soft Fork},%
+type={main},%
+first={Soft Fork},%
+firstplural={Soft Forks},%
+text={Soft Fork},%
+plural={Soft Forks},%
+description={Een verandering in het Blockchain protocol die terugwaartse compatibiliteit heeft met eerdere versies van het protocol},%
+descriptionplural={Een verandering in het Blockchain protocol die terugwaartse compatibiliteit heeft met eerdere versies van het protocol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hard_fork}{}%
+{%
+\gls@defglossaryentry{hard_fork}%
+{%
+name={Hard Fork},%
+sort={Hard Fork},%
+type={main},%
+first={Hard Fork},%
+firstplural={Hard Forks},%
+text={Hard Fork},%
+plural={Hard Forks},%
+description={Een verandering in het Blockchain protocol die een nieuwe regel in het netwerk introduceert, waardoor het protocol geen compatibiliteit heeft met eerder versies},%
+descriptionplural={Een verandering in het Blockchain protocol die een nieuwe regel in het netwerk introduceert, waardoor het protocol geen compatibiliteit heeft met eerder versies},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{peer}{}%
+{%
+\gls@defglossaryentry{peer}%
+{%
+name={peer},%
+sort={peer},%
+type={main},%
+first={peer},%
+firstplural={peers},%
+text={peer},%
+plural={peers},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tunnel}{}%
+{%
+\gls@defglossaryentry{tunnel}%
+{%
+name={tunnel},%
+sort={tunnel},%
+type={main},%
+first={tunnel},%
+firstplural={tunnels},%
+text={tunnel},%
+plural={tunnels},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{I2NP}{}%
+{%
+\gls@defglossaryentry{I2NP}%
+{%
+name={I2NP},%
+sort={I2NP},%
+type={acronym},%
+first={I2P Network Protocol\glsspace (I2NP)},%
+firstplural={I2P Network Protocols\glsspace (I2NPs)},%
+text={I2NP},%
+plural={I2NPs},%
+description={I2P Network Protocol},%
+descriptionplural={I2P Network Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={I2P Network Protocol},%
+longplural={I2P Network Protocols},%
+short={I2NP},%
+shortplural={I2NPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{I2P}{}%
+{%
+\gls@defglossaryentry{I2P}%
+{%
+name={I2P},%
+sort={I2P},%
+type={acronym},%
+first={The Invisible Internet Project\glsspace (I2P)},%
+firstplural={The Invisible Internet Projects\glsspace (I2Ps)},%
+text={I2P},%
+plural={I2Ps},%
+description={The Invisible Internet Project},%
+descriptionplural={The Invisible Internet Project\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The Invisible Internet Project},%
+longplural={The Invisible Internet Projects},%
+short={I2P},%
+shortplural={I2Ps},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{P2P}{}%
+{%
+\gls@defglossaryentry{P2P}%
+{%
+name={P2P},%
+sort={P2P},%
+type={acronym},%
+first={Peer-to-Peer\glsspace (P2P)},%
+firstplural={Peer-to-Peers\glsspace (P2Ps)},%
+text={P2P},%
+plural={P2Ps},%
+description={Peer-to-Peer},%
+descriptionplural={Peer-to-Peer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Peer-to-Peer},%
+longplural={Peer-to-Peers},%
+short={P2P},%
+shortplural={P2Ps},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PoS}{}%
+{%
+\gls@defglossaryentry{PoS}%
+{%
+name={PoS},%
+sort={PoS},%
+type={acronym},%
+first={Proof of Stake\glsspace (PoS)},%
+firstplural={Proof of Stakes\glsspace (PoSs)},%
+text={PoS},%
+plural={PoSs},%
+description={Proof of Stake},%
+descriptionplural={Proof of Stake\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Proof of Stake},%
+longplural={Proof of Stakes},%
+short={PoS},%
+shortplural={PoSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PoSe}{}%
+{%
+\gls@defglossaryentry{PoSe}%
+{%
+name={PoSe},%
+sort={PoSe},%
+type={acronym},%
+first={Proof of Service\glsspace (PoSe)},%
+firstplural={Proof of Services\glsspace (PoSes)},%
+text={PoSe},%
+plural={PoSes},%
+description={Proof of Service},%
+descriptionplural={Proof of Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Proof of Service},%
+longplural={Proof of Services},%
+short={PoSe},%
+shortplural={PoSes},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DPoS}{}%
+{%
+\gls@defglossaryentry{DPoS}%
+{%
+name={DPoS},%
+sort={DPoS},%
+type={acronym},%
+first={Delegated Proof of Stake\glsspace (DPoS)},%
+firstplural={Delegated Proof of Stakes\glsspace (DPoSs)},%
+text={DPoS},%
+plural={DPoSs},%
+description={Delegated Proof of Stake},%
+descriptionplural={Delegated Proof of Stake\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Delegated Proof of Stake},%
+longplural={Delegated Proof of Stakes},%
+short={DPoS},%
+shortplural={DPoSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PoW}{}%
+{%
+\gls@defglossaryentry{PoW}%
+{%
+name={PoW},%
+sort={PoW},%
+type={acronym},%
+first={Proof of Work\glsspace (PoW)},%
+firstplural={Proof of Works\glsspace (PoWs)},%
+text={PoW},%
+plural={PoWs},%
+description={Proof of Work},%
+descriptionplural={Proof of Work\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Proof of Work},%
+longplural={Proof of Works},%
+short={PoW},%
+shortplural={PoWs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BFT}{}%
+{%
+\gls@defglossaryentry{BFT}%
+{%
+name={BFT},%
+sort={BFT},%
+type={acronym},%
+first={Byzantine Fault Tolerance\glsspace (BFT)},%
+firstplural={Byzantine Fault Tolerances\glsspace (BFTs)},%
+text={BFT},%
+plural={BFTs},%
+description={Byzantine Fault Tolerance},%
+descriptionplural={Byzantine Fault Tolerance\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Byzantine Fault Tolerance},%
+longplural={Byzantine Fault Tolerances},%
+short={BFT},%
+shortplural={BFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DoS}{}%
+{%
+\gls@defglossaryentry{DoS}%
+{%
+name={DoS},%
+sort={DoS},%
+type={acronym},%
+first={Denial of Service\glsspace (DoS)},%
+firstplural={Denial of Services\glsspace (DoSs)},%
+text={DoS},%
+plural={DoSs},%
+description={Denial of Service},%
+descriptionplural={Denial of Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Denial of Service},%
+longplural={Denial of Services},%
+short={DoS},%
+shortplural={DoSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tx}{}%
+{%
+\gls@defglossaryentry{tx}%
+{%
+name={tx},%
+sort={tx},%
+type={acronym},%
+first={transactie\glsspace (tx)},%
+firstplural={transacties\glsspace (txs)},%
+text={tx},%
+plural={txs},%
+description={transactie},%
+descriptionplural={transactie\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={transactie},%
+longplural={transacties},%
+short={tx},%
+shortplural={txs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{DHT}{}%
+{%
+\gls@defglossaryentry{DHT}%
+{%
+name={DHT},%
+sort={DHT},%
+type={acronym},%
+first={Distributed Hash Table\glsspace (DHT)},%
+firstplural={Distributed Hash Tables\glsspace (DHTs)},%
+text={DHT},%
+plural={DHTs},%
+description={Distributed Hash Table},%
+descriptionplural={Distributed Hash Table\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Distributed Hash Table},%
+longplural={Distributed Hash Tables},%
+short={DHT},%
+shortplural={DHTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

@@ -1,0 +1,641 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{ Roman, K. }%
+}{%
+{ Roman, K. }%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+steemit:eos_dpos}
+\APACinsertmetastar {%
+steemit:eos_dpos}%
+\begin{APACrefauthors}%
+{ Roman, K. }.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Understanding EOS and Delegated Proof of Stake --- Steemit.}
+  {Understanding eos and delegated proof of stake --- steemit.}
+\newblock
+\begin{APACrefURL}
+  \url{https://steemit.com/eos/@eosgo/understanding-eos-and-delegated-proof-of-stake}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Bitcoin Wiki}%
+}{%
+{Bitcoin Wiki}%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+ProofofWork}
+\APACinsertmetastar {%
+ProofofWork}%
+\begin{APACrefauthors}%
+{Bitcoin Wiki}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {Proof of Work.} {Proof of work.}
+\newblock
+\begin{APACrefURL} \url{https://en.bitcoin.it/wiki/Proof_of_work}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; benaderd op 29 maart, 2018]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Cardano Docs}%
+}{%
+{Cardano Docs}%
+}{%
+{\protect \APACyear {2013}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+cardano_wiki}
+\APACinsertmetastar {%
+cardano_wiki}%
+\begin{APACrefauthors}%
+{Cardano Docs}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013{\protect \BCnt {1}}}{}{}.
+\newblock
+\APACrefbtitle {Cardano.} {Cardano.}
+\newblock
+\begin{APACrefURL}
+  \url{https://cardanodocs.com/technical/protocols/p2p/#addressing}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Cardano Docs}%
+}{%
+{Cardano Docs}%
+}{%
+{\protect \APACyear {2013}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+cardano_wiki:csl_app_level}
+\APACinsertmetastar {%
+cardano_wiki:csl_app_level}%
+\begin{APACrefauthors}%
+{Cardano Docs}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013{\protect \BCnt {2}}}{}{}.
+\newblock
+\APACrefbtitle {CSL Application-Level Messaging - Cardano.} {Csl
+  application-level messaging - cardano.}
+\newblock
+\begin{APACrefURL}
+  \url{https://cardanodocs.com/technical/protocols/csl-application-level/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Cardano Docs}%
+}{%
+{Cardano Docs}%
+}{%
+{\protect \APACyear {2013}}%
+{\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
+cardano_wiki:proof_of_stake}
+\APACinsertmetastar {%
+cardano_wiki:proof_of_stake}%
+\begin{APACrefauthors}%
+{Cardano Docs}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013{\protect \BCnt {3}}}{}{}.
+\newblock
+\APACrefbtitle {Ouroboros Proof of Stake Algorithm - Cardano.} {Ouroboros proof
+  of stake algorithm - cardano.}
+\newblock
+\begin{APACrefURL} \url{https://cardanodocs.com/cardano/proof-of-stake/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Conti%
+, Lal%
+, Ruj%
+\BCBL {}\ \protect \BOthers {.}}{%
+Conti%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+conti2017survey}
+\APACinsertmetastar {%
+conti2017survey}%
+\begin{APACrefauthors}%
+Conti, M.%
+, Lal, C.%
+, Ruj, S.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A survey on security and privacy issues of bitcoin} {A
+  survey on security and privacy issues of bitcoin}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1706.00916}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Decker%
+\ \BBA {} Wattenhofer%
+}{%
+Decker%
+\ \BBA {} Wattenhofer%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+6688704}
+\APACinsertmetastar {%
+6688704}%
+\begin{APACrefauthors}%
+Decker, C.%
+\BCBT {}\ \BBA {} Wattenhofer, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{Sept}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Information propagation in the Bitcoin network}
+  {Information propagation in the bitcoin network}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {IEEE P2P 2013 Proceedings} {Ieee p2p 2013 proceedings}\
+  (\BPG~1-10).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/P2P.2013.6688704} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+en B.~Scheuermann%
+}{%
+en B.~Scheuermann%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+7423672}
+\APACinsertmetastar {%
+7423672}%
+\begin{APACrefauthors}%
+en B.~Scheuermann, F\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{thirdquarter}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bitcoin and Beyond: A Technical Survey on Decentralized
+  Digital Currencies} {Bitcoin and beyond: A technical survey on decentralized
+  digital currencies}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Communications Surveys
+  Tutorials}{18}{3}{2084-2123}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/COMST.2016.2535718} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eyal%
+\ \BBA {} Sirer%
+}{%
+Eyal%
+\ \BBA {} Sirer%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+eyal2014majority}
+\APACinsertmetastar {%
+eyal2014majority}%
+\begin{APACrefauthors}%
+Eyal, I.%
+\BCBT {}\ \BBA {} Sirer, E\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Majority is not enough: Bitcoin mining is vulnerable}
+  {Majority is not enough: Bitcoin mining is vulnerable}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International conference on financial cryptography and
+  data security} {International conference on financial cryptography and data
+  security}\ (\BPGS\ 436--454).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Heilman%
+, Kendler%
+, Zohar%
+\BCBL {}\ \BBA {} Goldberg%
+}{%
+Heilman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+heilman2015eclipse}
+\APACinsertmetastar {%
+heilman2015eclipse}%
+\begin{APACrefauthors}%
+Heilman, E.%
+, Kendler, A.%
+, Zohar, A.%
+\BCBL {}\ \BBA {} Goldberg, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Eclipse Attacks on Bitcoin's Peer-to-Peer Network.}
+  {Eclipse attacks on bitcoin's peer-to-peer network.}{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {USENIX Security Symposium} {Usenix security symposium}\
+  (\BPGS\ 129--144).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+G.~Karame%
+, Androulaki%
+\BCBL {}\ \BBA {} Capkun%
+}{%
+G.~Karame%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+karame2012two}
+\APACinsertmetastar {%
+karame2012two}%
+\begin{APACrefauthors}%
+Karame, G.%
+, Androulaki, E.%
+\BCBL {}\ \BBA {} Capkun, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Two Bitcoins at the Price of One? Double-Spending
+  Attacks on Fast Payments in Bitcoin.} {Two bitcoins at the price of one?
+  double-spending attacks on fast payments in bitcoin.}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IACR Cryptology ePrint Archive}{2012}{248}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+G\BPBI O.~Karame%
+, Androulaki%
+\BCBL {}\ \BBA {} Capkun%
+}{%
+G\BPBI O.~Karame%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+karame2012double}
+\APACinsertmetastar {%
+karame2012double}%
+\begin{APACrefauthors}%
+Karame, G\BPBI O.%
+, Androulaki, E.%
+\BCBL {}\ \BBA {} Capkun, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Double-spending fast payments in bitcoin}
+  {Double-spending fast payments in bitcoin}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 2012 ACM conference on Computer and
+  communications security} {Proceedings of the 2012 acm conference on computer
+  and communications security}\ (\BPGS\ 906--917).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kiayias%
+\ \protect \BOthers {.}}{%
+Kiayias%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+kiayias2017ouroboros}
+\APACinsertmetastar {%
+kiayias2017ouroboros}%
+\begin{APACrefauthors}%
+Kiayias, A.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ouroboros: A provably secure proof-of-stake blockchain
+  protocol} {Ouroboros: A provably secure proof-of-stake blockchain
+  protocol}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Annual International Cryptology Conference} {Annual
+  international cryptology conference}\ (\BPGS\ 357--388).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kiffer%
+, Levin%
+\BCBL {}\ \BBA {} Mislove%
+}{%
+Kiffer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+kiffer2017stick}
+\APACinsertmetastar {%
+kiffer2017stick}%
+\begin{APACrefauthors}%
+Kiffer, L.%
+, Levin, D.%
+\BCBL {}\ \BBA {} Mislove, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Stick a fork in it: Analyzing the Ethereum network
+  partition} {Stick a fork in it: Analyzing the ethereum network
+  partition}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 16th ACM Workshop on Hot Topics in
+  Networks} {Proceedings of the 16th acm workshop on hot topics in networks}\
+  (\BPGS\ 94--100).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lamport%
+\ \protect \BOthers {.}}{%
+Lamport%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1982}}%
+}]{%
+lamport1982byzantine}
+\APACinsertmetastar {%
+lamport1982byzantine}%
+\begin{APACrefauthors}%
+Lamport, L.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Byzantine generals problem} {The byzantine generals
+  problem}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM Transactions on Programming Languages and Systems
+  (TOPLAS)}{4}{3}{382--401}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Maymounkov%
+\ \BBA {} Mazieres%
+}{%
+Maymounkov%
+\ \BBA {} Mazieres%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+maymounkov2002kademlia}
+\APACinsertmetastar {%
+maymounkov2002kademlia}%
+\begin{APACrefauthors}%
+Maymounkov, P.%
+\BCBT {}\ \BBA {} Mazieres, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Kademlia: A peer-to-peer information system based on the
+  xor metric} {Kademlia: A peer-to-peer information system based on the xor
+  metric}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Workshop on Peer-to-Peer Systems}
+  {International workshop on peer-to-peer systems}\ (\BPGS\ 53--65).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Meiklejohn%
+\ \protect \BOthers {.}}{%
+Meiklejohn%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+meiklejohn2013fistful}
+\APACinsertmetastar {%
+meiklejohn2013fistful}%
+\begin{APACrefauthors}%
+Meiklejohn, S.%
+, Pomarole, M.%
+, Jordan, G.%
+, Levchenko, K.%
+, McCoy, D.%
+, Voelker, G\BPBI M.%
+\BCBL {}\ \BBA {} Savage, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A fistful of bitcoins: characterizing payments among men
+  with no names} {A fistful of bitcoins: characterizing payments among men with
+  no names}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 2013 conference on Internet
+  measurement conference} {Proceedings of the 2013 conference on internet
+  measurement conference}\ (\BPGS\ 127--140).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nakamoto%
+}{%
+Nakamoto%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+nakamoto2008bitcoin}
+\APACinsertmetastar {%
+nakamoto2008bitcoin}%
+\begin{APACrefauthors}%
+Nakamoto, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bitcoin: A peer-to-peer electronic cash system}
+  {Bitcoin: A peer-to-peer electronic cash system}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{NIST}%
+}{%
+{NIST}%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+nist_bitcoind_dos}
+\APACinsertmetastar {%
+nist_bitcoind_dos}%
+\begin{APACrefauthors}%
+{NIST}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {NVD - CVE-2013-5700.} {Nvd - cve-2013-5700.}
+\newblock
+\begin{APACrefURL} \url{https://nvd.nist.gov/vuln/detail/CVE-2013-5700}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{[Online; benaderd op 6 april, 2018]}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Noether%
+\ \protect \BOthers {.}}{%
+Noether%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+noether2014monero}
+\APACinsertmetastar {%
+noether2014monero}%
+\begin{APACrefauthors}%
+Noether, Y.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Monero is not that mysterious} {Monero is not that
+  mysterious}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Technical report}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+O'Dwyer%
+\ \BBA {} Malone%
+}{%
+O'Dwyer%
+\ \BBA {} Malone%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+ODwyer:Bitcoin}
+\APACinsertmetastar {%
+ODwyer:Bitcoin}%
+\begin{APACrefauthors}%
+O'Dwyer, K\BPBI J.%
+\BCBT {}\ \BBA {} Malone, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bitcoin Mining and its Energy Footprint} {Bitcoin mining
+  and its energy footprint}.{\BBCQ}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Okamoto%
+}{%
+Okamoto%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+Okamoto:1991:UEC:646756.705374}
+\APACinsertmetastar {%
+Okamoto:1991:UEC:646756.705374}%
+\begin{APACrefauthors}%
+Okamoto, K., Tatsuaki en~Ohta.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Universal Electronic Cash} {Universal electronic
+  cash}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 11th Annual International Cryptology
+  Conference on Advances in Cryptology} {Proceedings of the 11th annual
+  international cryptology conference on advances in cryptology}\ (\BPGS\
+  324--337).
+\newblock
+\APACaddressPublisher{London, UK, UK}{Springer-Verlag}.
+\newblock
+\begin{APACrefURL} \url{http://dl.acm.org/citation.cfm?id=646756.705374}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reid%
+\ \BBA {} Harrigan%
+}{%
+Reid%
+\ \BBA {} Harrigan%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+reid2013analysis}
+\APACinsertmetastar {%
+reid2013analysis}%
+\begin{APACrefauthors}%
+Reid, F.%
+\BCBT {}\ \BBA {} Harrigan, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An analysis of anonymity in the bitcoin system} {An
+  analysis of anonymity in the bitcoin system}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Security and privacy in social networks} {Security and
+  privacy in social networks}\ (\BPGS\ 197--223).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Van~Saberhagen%
+}{%
+Van~Saberhagen%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+van2013cryptonote}
+\APACinsertmetastar {%
+van2013cryptonote}%
+\begin{APACrefauthors}%
+Van~Saberhagen, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {Cryptonote v 2. 0.} {Cryptonote v 2. 0.}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

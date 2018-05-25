@@ -1,0 +1,10 @@
+\babel@toc {dutch}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Indeling opdracht Blockchain ontwikkeling zoals gegeven door Quintor afkomstig uit.\relax }}{2}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Voorbeeld van een blockchain \citep {zheng2016blockchain}\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CryptoKitties, een spel dat gebruik maakt van Blockchain technologie.\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Blockchain architectuur.\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distributed Hash Table. Door het vertalen van data naar een cryptografische sleutel is het mogelijk om aan de hand van de sleutel de data op te vragen aan peers die de data bezitten.\relax }}{12}{figure.caption.13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Een bitcoin netwerk node die alle functies bevat: wallet, mining, blockchain database en netwerk routing, \citep [p.~172]{Antonopoulos:2014:MBU:2695500}.\relax }}{13}{figure.caption.14}

@@ -1,0 +1,41 @@
+\babel@toc {dutch}{}
+\contentsline {chapter}{\numberline {1}Inleiding}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Opdracht}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Probleemstelling}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Doelstelling}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Resultaat}{3}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Producten}{3}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}Vooronderzoek en resultaten}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Blockchain}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Eigenschappen}{7}{subsection.3.1.1}
+\contentsline {paragraph}{Decentralisatie}{7}{subsection.3.1.1}
+\contentsline {paragraph}{Persisentie}{7}{subsection.3.1.1}
+\contentsline {paragraph}{Anonimiteit}{7}{subsection.3.1.1}
+\contentsline {paragraph}{Controleerbaarheid}{7}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Toepassing}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Ontwikkelplatform}{9}{subsection.3.2.1}
+\contentsline {paragraph}{CryptoKitties}{9}{lstnumber.3.1.25}
+\contentsline {section}{\numberline {3.3}Architectuur}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gedistribueerd netwerk}{11}{section.3.4}
+\contentsline {paragraph}{Soft fork}{12}{figure.caption.13}
+\contentsline {paragraph}{Hard fork}{12}{figure.caption.13}
+\contentsline {section}{\numberline {3.5}Identiteit}{14}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Categorie\IeC {\"e}n}{14}{subsection.3.5.1}
+\contentsline {paragraph}{Public}{14}{subsection.3.5.1}
+\contentsline {paragraph}{Consortium}{14}{subsection.3.5.1}
+\contentsline {paragraph}{Private}{15}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Identificatie}{15}{subsection.3.5.2}
+\contentsline {paragraph}{Pseudoniem}{15}{subsection.3.5.2}
+\contentsline {paragraph}{Anoniem}{15}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Obstakels}{16}{section.3.6}
+\contentsline {section}{\numberline {3.7}Conclusie}{17}{section.3.7}
+\contentsline {chapter}{Literatuurlijst}{18}{Item.7}
+\contentsline {chapter}{Bijlages}{19}{section*.16}
+\contentsline {section}{\numberline {I}Opdrachtformulering}{20}{section.1..1}
+\contentsline {section}{\numberline {II}Afstudeerplan}{23}{section.1..2}
+\contentsline {section}{\numberline {III}Plan van Aanpak}{28}{section.1..3}
+\contentsline {section}{\numberline {IV}Implementatie selectie}{41}{section.1..4}
+\contentsline {section}{\numberline {V}Onderzoeksrapport}{41}{section.1..5}
+\contentsline {section}{\numberline {VI}Adviesrapport}{67}{section.1..6}
+\contentsline {section}{\numberline {VII}Voortgangsverslag}{75}{section.1..7}
+\contentsline {section}{\numberline {VIII}Bezoekverslag}{77}{section.1..8}

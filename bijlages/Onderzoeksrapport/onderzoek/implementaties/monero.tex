@@ -1,0 +1,20 @@
+\paragraph{Architectuur}
+
+Monero maakt gebruik van \acrfull{I2P} protocol. Het \acrshort{I2P} protocol stelt het netwerk in staat om deelnemers te beschermen tegen een zekere mate van verkeer; waarbij de identiteit van de verstuurder en ontvanger verborgen wordt, terwijl er gebruik gemaakt wordt van encryptiestandaarden om de inhoud van berichten te verbergen en te garanderen dat het bericht aankomt \citep{zantout2011i2p}. Het protocol ondersteund zowel TCP/IP als UDP/IP communicatie, waarbij de Transport laag in het network van Monero gelimiteerd is aan de mogelijkheden die \acrshort{I2P} ondersteund \citep{moneropedia:kovri}.
+De transport laag faciliteert de connectie tussen de verschillende deelnemers in het netwerk. Om vervolgens te kunnen communiceren wordt er gebruik gemaakt van een \gls{tunnel}. Elke deelnemer in het netwerk heeft minimaal twee \Glspl{tunnel}, een voor uitgaand- en inkomend verkeer. Wanneer er communicatie plaatsvind tussen twee deelnemers zullen er vier \glspl{tunnel} aangemaakt worden; twee voor uitgaand verkeerd en twee voor inkomend verkeer \citep{moneropedia:tunnel}. Ook Monero maakt gebruik van het \gls{UTXO}, waarbij er bij iedere transactie twee keys aanwezig zijn; een spend key en een view key. Beide keys zijn onderdeel van een account, waarbij de spend key gebruikt wordt om geld uit te geven, en de view key gebruikt wordt om permissie te geven om de transacties in te zien van een deelnemer. De keys spelen een belangrijke rol in de privacy van de deelnemer omtrent transacties \citep{moneropedia:account}. 
+
+\paragraph{Discovery protocol}
+
+Het discovery protocol in gebruik bij Monero is soortgelijk aan de manier waarop Bitcoin het discovery proces uitvoert. Om het netwerk te bootstrappen wordt er gebruik gemaakt van \glspl{node} die vastgelegd zijn in de broncode, waarna er een lijst van \glspl{peer} wordt teruggegeven aan de deelnemer en de centrale node vergeten wordt. Het is ook mogelijk om zelf deelnemers vast te leggen waarna geprobeerd wordt om connectie te maken.
+
+\paragraph{Informatie propagatie}
+
+Alles binnen het \acrshort{I2P} netwerk wordt gecommuniceerd via berichten. In het onderdeel architectuur is er kort gesproken over \Gls{tunnel} en de functionaliteiten die ermee gerealiseerd wordt. Er zijn twee soorten berichten die verzonden worden: \Gls{tunnel} berichten en \acrfull{I2NP} berichten\footnote{Zie \href{https://geti2p.net/en/docs/protocol/i2np}{"I2NP Specifiation - I2P | Overview"} voor de verschillende types.}. Het proces, zoals beschreven in \cite{moneropedia:message}:
+
+\begin{itemize}
+  \setlength\itemsep{-0.7em}
+  \item De \Gls{tunnel} verzameld \acrshort{I2NP} berichten en verwerkt ze naar \Gls{tunnel} berichten. Hierbij kan het voorkomen dat \acrshort{I2NP} berichten gefragmenteerd worden omdat ze van variabele grootte zijn, terwijl \Gls{tunnel} berichten een vaste grootte hebben.
+  \item De \Gls{tunnel} encrypt de verwerkte data en stuurt het door in de vorm van \Gls{tunnel} berichten.
+  \item De deelnemer, en andere deelnemers die deel uitmaken van de \Gls{tunnel}, pakken een laag van de encryptie uit en verifiëren dat het bericht geen duplicaat is en sturen het vervolgens door naar een volgende deelnemer.
+  \item Met de tijd zullen de \Gls{tunnel} berichten het eindpunt bereiken waarna ze terug worden gezet naar de originele \acrshort{I2NP} berichten.
+\end{itemize}

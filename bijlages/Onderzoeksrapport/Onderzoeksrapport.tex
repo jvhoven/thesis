@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{report}
+  \usepackage[a4paper, total={5in, 9in}]{geometry}
+  \usepackage[numbib, notlof, notlot, nottoc]{tocbibind}
+  \usepackage{
+    graphicx,
+    wrapfig,
+    url,
+    hyperref,
+    titlesec, 
+    booktabs,
+    color,
+    colortbl,
+    enumitem
+  }
+  \usepackage[natbibapa]{apacite}
+  \usepackage[export]{adjustbox}
+  \usepackage[utf8]{inputenc}
+  \usepackage{amssymb}
+  \usepackage[parfill]{parskip}
+  \usepackage{fancyhdr, pdfpages}
+  \usepackage[bottom]{footmisc}
+  \usepackage[acronym]{glossaries}
+  \usepackage[dutch]{babel}
+  \usepackage{csquotes}
+  \usepackage[toc,titletoc,title]{appendix}
+  \usepackage[font={small,it}]{caption}
+
+\graphicspath{ {images/} }
+
+\renewcommand{\contentsname}{Inhoudsopgave}
+\makenoidxglossaries
+\loadglsentries{begrippen}
+
+\begin{document}
+  
+  \begin{titlepage}
+    \begin{figure}
+      \includegraphics[width=\textwidth]{quintor}
+      \vspace{1cm}    
+    \end{figure}
+
+    {\huge\centering Onderzoeksrapport \par}
+    \vspace{1cm}    
+    {\large\bfseries\centering
+      Het opzetten van een peer-to-peer netwerk met identiteit \\
+      management door middel van Blockchain technologie
+    \par}
+
+    \vfill
+
+    \begin{flushleft}
+      Jeffrey van Hoven \\
+      14068265@student.hhs.nl \\
+      \today
+    \end{flushleft}
+  \end{titlepage}
+
+  \include{pages/00_Samenvatting}
+  \include{pages/01_Inleiding}
+
+  \newpage
+  \tableofcontents
+
+  \include{pages/02_Probleemstelling}
+  \include{pages/03_Opzet}
+  %\include{pages/04_Uitvoering}
+  \include{pages/05_Resultaten}
+  \include{pages/06_Conclusie}
+
+  \setlength\bibsep{\baselineskip}  
+  \bibliographystyle{apacite}
+  \bibliography{referenties}
+  
+\end{document}
