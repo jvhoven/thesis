@@ -1,5 +1,0 @@
-\babel@toc {dutch}{}
-\contentsline {section}{\numberline {1}Onderzoeksopzet}{3}{section.1}
-\contentsline {section}{\numberline {2}Alternatieve maatregelen}{4}{section.2}
-\contentsline {section}{\numberline {3}Conclusie}{5}{section.3}
-\contentsline {section}{\numberline {4}Bronnen}{6}{section.4}
