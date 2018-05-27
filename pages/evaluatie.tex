@@ -1,0 +1,57 @@
+\chapter{Evaluatie}
+
+\textit{In dit hoofdstuk worden de resultaten van de afstudeeropdracht geëvalueerd. Er wordt gekeken naar de opgeleverde producten en de kwaliteit hiervan. Vervolgens wordt de gekozen aanpak besproken en de mogelijke afwijkingen van het afstudeerplan. Als laatste wordt er gekeken naar de beroepstaken die uitgevoerd zijn.}
+
+\section{Producten}
+
+\subsection{Plan van Aanpak}
+
+Het plan van aanpak is te vinden in bijlage \ref{appendix:pva} en bevat een beschrijving van de aanpak zoals in het begin van het afstudeertraject is opgezet. Het is niet meegenomen in het iteratieve proces, waardoor het geen gedetailleerde beschrijving van de aanpakken bevat. Het plan van aanpak bevat tevens alle werkzaamheden die doorlopen zijn om tot het eindresultaat te komen en is essentieel geweest voor de uitvoering van het project. Het gaf me namelijk een goed beeld van wat er nodig was om het project tot een succesvol einde te brengen, zonder de focus van het project uit het oog te verliezen.
+
+\subsection{Onderzoeksrapport}
+
+Het onderzoeksrapport is te vinden in bijlage \ref{appendix:onderzoeksrapport} en bevat het resultaat van het onderzoek met als hoofdvraag ``Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?''. Ten tijde van het opzetten van het afstudeerplan was er nog geen kennis over het Blockchain domein, en ik ben dan ook zeer tevreden met de kennis die vergaard is met het gedane onderzoek. Helaas heb ik niet alle vragen kunnen behandelen die ik in eerste instantie in gedachte had, maar niettemin bevat een goede fundering voor kennis voor de onderdelen Identity Management en Distributed Network in de Blockchain implementaties Bitcoin, EOS, Monero en Cardano. 
+
+\newpage
+\subsection{Adviesrapport}
+
+Het adviesrapport is te vinden in bijlage \ref{appendix:adviesrapport} en bevat interpretaties en technologieën die geadviseerd zijn voor het ontwikkelde Proof-of-Concept. Het document adviseert over technologieën waaruit de meeste waarde gehaald kon worden voor Quintor. Helaas is tijd hierbij ook een beperkende factor gebleken en is er niet uitgebreid verteld over de verschillende technologieën. Het was wel voldoende om aan de hand van discussie met de bedrijfsbegeleider en de Blockchain expert een selectie te maken van technologieën die gerealiseerd zijn in het Proof-of-Concept.
+
+\subsection{Proof of Concept}
+
+Het Proof of Concept bestaat uit technologieën die in overeenstemming met Quintor geselecteerd zijn uit het adviesrapport. Het betreft het realiseren van het Kademlia protocol om te functioneren als topologie voor het netwerk. Daarnaast is er gekozen voor een consortium Blockchain waarbij het permissiemodel van EOS gerealiseerd is. Informatie wordt verstuurd op de wijze waarop Bitcoin en Cardano het doen, namelijk met het gebruik van inv, data en req berichten. Dit was een zeer ambitieuze implementatie, losstaand van het feit dat de complexiteit van de implementatie lag in de samenwerking met de onderdelen die gerealiseerd waren door Kevin Bos. Over het algemeen ben ik tevreden met de realisatie van het Proof of Concept en de totstandkoming daarop.
+
+\section{Aanpak}
+
+Gedurende het afstudeertraject is de aanpak op Agile wijze uitgevoerd. Door de vele iteraties van zowel het vooronderzoek, de opzet van het onderzoek en het daadwerkelijke resultaat van het onderzoek is er veel tijd verloren gegaan, en zou ik in het vervolg ook niet voor een Agile aanpak kiezen bij het uitvoeren van onderzoek. Een groot valkuil waar ik mezelf op betrapte tijdens het onderzoeken van Blockchain protocollen is het feit dat ik teveel wil beschrijven en dat vervolgens ook wil uitlichten in het vooronderzoek om het concept duidelijk te maken voor de lezer.
+
+\subsection{Onderzoek}
+
+Het onderzoek is uitgevoerd door literatuurstudie waarbij geen toepassing bekend was. In andere afstudeerscripties komt het doorgaans voor dat er gebruik gemaakt wordt van toegepast onderzoek, waardoor het opzetten van de structuur in het gehele project nogal in de war kwam. Dit zorgde ervoor dat het onderzoeksrapport de grootste artefact van de afstudeeropdracht was en het Proof of Concept erbij kwam als bijkomstigheid. De keuzes die hiertoe geleid hebben konden in mijn ogen ook niet anders met hoe de opdracht vanuit Quintor gepresenteerd was, namelijk dat de insteek van de opdracht was om kennis op te doen van het Blockchain domein.
+
+\section{Beroepstaken}
+
+De beroepstaken die uitgevoerd zoals opgegeven in het afstudeerplan, in te zien in bijlage \ref{appendix:afstudeerplan}, zijn hieronder verantwoord. De complexiteit is ingedeeld naar de beschrijving van beroepstaken zoals gepresenteerd in het document ``Beroepstaken van de opleiding Informatica -- Academie voor ICT \& Media, uitgave juni 2009''.
+
+\begin{itemize}
+  \item \textbf{Selecteren, methoden, technieken en tools.}
+  
+  Er zijn meerdere handelingen geweest die verantwoord kunnen worden onder deze beroepstaak. Tijdens het realiseren van het Proof of Concept zijn er zowel keuzes gemaakt op het gebied van de selectie van methoden, technieken en tools als bij het opstellen van de development workflow die gepaard ging met de realisatie. 
+  
+  De complexiteit van dit onderdeel komt neer op niveau 4, aangezien het zelfstandig is uitgevoerd en van voldoende complexiteit is in samenwerking met de inventarisatie van bestaande Blockchain technieken.
+  \item \textbf{Ontwerpen systeemdeel.}
+  
+  Het ontwerpen van het systeemdeel betrof het modelleren van de verschillende technologieën die uit de selectie van het adviesrapport gekomen zijn. De samenwerking tussen de technologieën dient modulair te zijn zodat elk losstaand deel vervangen kan worden. Het systeem dient tevens samen te werken met componenten die gerealiseerd zijn door een andere afstudeerder. Er is hierbij gebruik gemaakt van de ontwerpmethode 4+1 architectural view model zoals beschreven door \cite{kruchten19954+}. 
+  
+  De complexiteit van dit onderdeel komt neer op niveau 4, aangezien het systeem rekening dient te houden met de geïdentificeerde gevaren in het gedane onderzoek en het 4+1 architectural view model beschrijft de architectuur vanuit verschillende gezichtspunten.
+
+  \item \textbf{Bouwen applicatie.}
+
+  De realisatie van het Proof of Concept betreft het bouwen van een applicatie die aansluit op een ander deel van de Blockchain dat gerealiseerd is door een afstudeerder. Er wordt hierbij gebruik gemaakt van frameworks waarbij er redenatie aanwezig is voor gekozen frameworks. Er wordt gebruik gemaakt door versiebeheer dat gefaciliteerd is door Quintor, en er wordt containerization toegepast om een testomgeving te simuleren.
+
+  De complexiteit van dit onderdeel komt neer op niveau 4, aangezien het aansluit op bestaande software en er gebruik gemaakt wordt van een ontwikkelomgeving inclusief testomgeving en versiebeheertool.
+
+\end{itemize}
+
+
+
