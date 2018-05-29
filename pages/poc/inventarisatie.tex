@@ -1,0 +1,18 @@
+\section{Inventarisatie}
+
+Zoals besproken in het adviesrapport wordt het Kademlia protocol gebruikt om de topologie van het netwerk op te zetten. Daarnaast wordt er een consortium Blockchain opgezet, waarbij de toegang tot het netwerk via het EOS permissiemodel geregeld wordt. Het versturen van de data van de Blockchain over het netwerk zal gedaan worden via \textit{data}, \textit{inv} en \textit{req} berichten, waarbij een \textit{data} bericht verstuurd wordt om bijvoorbeeld nieuwe transacties of blocks uit te wisselen, het \textit{inv} ter inventarisatie om duidelijk te krijgen of een andere deelnemer bepaalde data wilt hebben en een \textit{req} om data op te vragen.
+
+\subsection{Peer-to-Peer}
+Om bovenstaande keuzes te realiseren dient eerst de basis van de architectuur gerealiseerd te worden, namelijk het \acrfull{P2P} netwerk. Er zijn een aantal keuzes mogelijk met de protocollen die het \acrshort{P2P} netwerk ondersteund.
+
+\paragraph{TCP/IP} het \acrfull{TCP} is het meest gebruikte protocol op het internet, het wordt namelijk gebruikt om data die benodigd is om een website te laden, te versturen. Een voordeel van \acrshort{TCP} is dat het protocol de garantie geeft dat data in de juiste volgorde ontvangen wordt. Het protocol wacht namelijk op bevestiging dat een \gls{packet} ontvangen is, alvorens een volgende \gls{packet} verstuurd word. Tevens zorgt dit ervoor dat data nooit corrupt raakt of verloren gaat.
+
+\paragraph{UDP/IP} het \acrfull{UDP} werkt hetzelfde als \acrshort{TCP} alleen zit in dit protocol niet de controle of een \gls{packet} correct is aangekomen. \Glspl{packet} worden achter elkaar verstuurd zonder na te gaan of de ontvanger ze daadwerkelijk ontvangen heeft. Dit zorgt ervoor dat de overhead van het controleren niet aanwezig is, waardoor het sneller is als het \acrshort{TCP} protocol.
+
+\subsection{Serialisatie}
+
+\begin{enumerate}
+  \item Protobuf
+  \item JSON
+\end{enumerate}
+

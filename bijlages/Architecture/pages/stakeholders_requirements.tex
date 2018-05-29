@@ -4,8 +4,58 @@
 
 Er zijn meerdere stakeholders die baat hebben bij de realisatie van dit project:
 
-\paragraph{Quintor} De opdrachtgever en tevens de eigenaar van het project.
+\paragraph{Quintor} De opdrachtgever en tevens de eigenaar van het project. De organisatie heeft baat bij het opdoen van kennis gedaan door dit project. Tevens zal het de eindgebruiker zijn van het systeem.
 
-\paragraph{Kevin Bos} Heeft belang bij de realisatie van het onderdeel Distributed Network en Identity Management.
+\paragraph{Kevin Bos} Heeft belang bij de realisatie van het onderdeel Distributed Network en Identity Management
 
+\newpage
 \section{Requirements}
+
+\subsection{Functional requirements}
+
+\begin{tabular}{|p{1.1cm}|p{8cm}|p{3cm}|}
+  \hline
+  \textbf{Id} & \textbf{Beschrijving} & \textbf{Prioritering} \\
+  \hline
+  FR01 & Als gebruiker wil ik een transactie kunnen aanmaken. & \\
+  \hline
+  FR02 & Als gebruiker wil ik mijn data kunnen synchroniseren. & \\
+  \hline
+  FR03 & Als gebruiker wil ik connectie kunnen leggen met een deelnemer uit het Peer-to-Peer netwerk. & \\
+  \hline
+  FR04 & Als gebruiker wil ik mijn openstaande connecties kunnen inzien. & \\
+  \hline
+  FR05 & Als gebruiker wil ik kunnen toetreden in het Peer-to-Peer netwerk. & \\
+  \hline
+  FR06 & Als gebruiker wil ik een block kunnen aanmaken. & \\
+  \hline
+  FR07 & Als beheerder wil ik een gebruiker kunnen aanmaken. & \\
+  \hline
+\end{tabular}
+
+\subsection{Non-functional requirements}
+
+\begin{tabular}{|p{1.1cm}|p{8cm}|p{3cm}|}
+  \hline
+  \textbf{Id} & \textbf{Beschrijving} & \textbf{ISO} \\
+  \hline
+  NFR01 & Het systeem dient om te kunnen gaan met deelnemers die de performance van het Peer-to-Peer netwerk proberen te verstoren. & Securability \\
+  \hline  
+  NFR02 & Het systeem dient om te kunnen gaan met het vervalsen van transacties. & Securability \\
+  \hline
+  NFR03 & Het systeem dient makkelijk uitgebreid te worden door de kerncomponenten modulair op te stellen. & Maintainability \\
+  \hline
+  NFR04 & Het systeem dient rekening te houden met protocol updates, en dient interactie met verouderde versies niet te ondersteunen. & Maintainability, Securability \\ 
+  \hline
+  NFR05 & Het systeem dient makkelijk ingezet te kunnen worden. & Deployment \\
+  \hline
+\end{tabular}
+
+\subsection{Business rules}
+\begin{tabular}{|p{1.1cm}|p{11cm}|}
+  \hline
+  BR01 & Berichten dienen van type req(uest), inv(entory), data en auth(entication) te zijn. \\
+  \hline
+  BR02 & Transactietypes zijn: account -- om een account te registreren in het netwerk, data -- arbitraire data dat nog niet gedefinieerd is. \\
+  \hline
+\end{tabular}

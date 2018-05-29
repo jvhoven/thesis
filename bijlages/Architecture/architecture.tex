@@ -1,11 +1,33 @@
-\documentclass[a4paper,10pt]{report}
+\documentclass[a4paper,9pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[parfill]{parskip}
 \usepackage[dutch]{babel}
 \usepackage[natbibapa]{apacite}
+\usepackage[font={small, it}]{caption}
 \usepackage{graphicx}
 
 \graphicspath{ {images/} }
+
+% Use case definitie %
+\newcommand\tabularhead[1]{
+\begin{table}[h]
+  \caption{Use-case: #1}
+  \begin{tabular}{|p{0.3\linewidth}|p{0.7\linewidth}|}
+    \hline
+    \textbf{Use-case} & \textbf{#1} \\
+    \hline}
+
+  \newcommand\addrow[2]{\textit{#1} &#2\\ \hline}
+
+  \newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}\textit{#1}\end{minipage}% 
+     &\begin{minipage}[t][][t]{8cm}
+      \begin{enumerate} #2   \end{enumerate}
+      \end{minipage}\\ \hline}
+
+  \newenvironment{usecase}{\tabularhead}
+{\end{tabular}\end{table}}
+
+% Einde use case definitie %
 
 \begin{document}
   \begin{titlepage}
