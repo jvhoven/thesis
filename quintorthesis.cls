@@ -22,7 +22,7 @@
 \graphicspath{ {images/}, {Bijlages/} }
 
 %-------------------------- Initialize ---------------------
-\LoadClass[a4paper,9pt]{report}
+\LoadClass[a4paper,11pt]{report}
 \definecolor{quintorred}{RGB}{184, 56, 71} 
 
 \newcommand\BackgroundPic{%
