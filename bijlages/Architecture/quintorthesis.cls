@@ -19,7 +19,7 @@
 \usepackage[strict]{changepage}
 \usepackage{framed}
 
-\graphicspath{ {images/}, {Bijlages/} }
+\graphicspath{ {images/} }
 
 %-------------------------- Initialize ---------------------
 \LoadClass[a4paper,11pt]{report}
@@ -30,8 +30,6 @@
 \parbox[b][\paperheight]{\paperwidth}{%
 \vfill
 \centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{cover.jpg}%
 % \vfill
 }}}
 
@@ -43,8 +41,6 @@ keepaspectratio]{cover.jpg}%
 \setlength{\textheight}{9.0in}
 \setlength{\textwidth}{6.0in}
 
-
-
 % ------------------------- Title mage ----------------------------
 \newcommand{\documenttype}[1]{\def\@documenttype{#1}}
 \renewcommand\maketitle{
@@ -53,18 +49,14 @@ keepaspectratio]{cover.jpg}%
   \newgeometry{margin = 0in}
   \centering
   {\colorbox{quintorred}{\hspace{50pt}\parbox[b]{21cm}{\Huge \color{white} \hspace{1cm} \vspace{2cm}}}}
-  \vspace{3.0cm}
-  \parbox{0.8\textwidth}{
-      \centering
-      \vspace{2cm}      
-  {\huge\bfseries \normalfont \color{gray} \@documenttype \par}
-  {\Huge\bfseries \normalfont \@title \par}
-  \vspace{4.0cm}
-  {\LARGE \bfseries \normalfont \@author } \\
-  {\Large \bfseries \normalfont \@date}
+  \vspace{1cm}
+  \parbox{0.8\textwidth}{\centering\vspace{8cm}      
+    {\large\bfseries \normalfont \color{gray} \@documenttype \par}
+    {\Huge\bfseries \normalfont \@title \par}
+    \vspace{2cm}
+    {\LARGE \bfseries \normalfont \@author } \\
+    {\Large \bfseries \normalfont \@date}
   }
-
-{\includegraphics[width=0.35\textwidth]{quintor}}
 }
 
 % ---------------------- Roman Pages -----------------------------

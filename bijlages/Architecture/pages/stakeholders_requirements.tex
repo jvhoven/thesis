@@ -6,11 +6,20 @@ Er zijn meerdere stakeholders die baat hebben bij de realisatie van dit project:
 
 \paragraph{Quintor} De opdrachtgever en tevens de eigenaar van het project. De organisatie heeft baat bij het opdoen van kennis gedaan door dit project. Tevens zal het de eindgebruiker zijn van het systeem.
 
-\paragraph{Kevin Bos} Heeft belang bij de realisatie van het onderdeel Distributed Network en Identity Management
+\paragraph{Kevin Bos} Heeft belang bij de realisatie van het onderdeel Distributed Network en Identity Management gezien de het gedeelte dat gerealiseerd wordt hem samen dient te werken met de componenten die voorgesteld zijn binnen dit document.
 
-\newpage
 \section{Requirements}
 
+\subsection{Business rules}
+\begin{tabular}{|p{1.1cm}|p{11cm}|}
+  \hline
+  BR01 & Berichten dienen van type req(uest), inv(entory), data en auth(entication) te zijn. \\
+  \hline
+  BR02 & Transactietypes zijn: account -- om een account te registreren in het netwerk, data -- arbitraire data dat nog niet gedefinieerd is. \\
+  \hline
+\end{tabular}
+
+\newpage
 \subsection{Functional requirements}
 
 \begin{tabular}{|p{1.1cm}|p{8cm}|p{3cm}|}
@@ -48,14 +57,5 @@ Er zijn meerdere stakeholders die baat hebben bij de realisatie van dit project:
   NFR04 & Het systeem dient rekening te houden met protocol updates, en dient interactie met verouderde versies niet te ondersteunen. & Maintainability, Securability \\ 
   \hline
   NFR05 & Het systeem dient makkelijk ingezet te kunnen worden. & Deployment \\
-  \hline
-\end{tabular}
-
-\subsection{Business rules}
-\begin{tabular}{|p{1.1cm}|p{11cm}|}
-  \hline
-  BR01 & Berichten dienen van type req(uest), inv(entory), data en auth(entication) te zijn. \\
-  \hline
-  BR02 & Transactietypes zijn: account -- om een account te registreren in het netwerk, data -- arbitraire data dat nog niet gedefinieerd is. \\
   \hline
 \end{tabular}
