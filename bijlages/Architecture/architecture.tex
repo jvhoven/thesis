@@ -1,12 +1,36 @@
-\documentclass[a4paper,9pt]{report}
-\usepackage[utf8]{inputenc}
-\usepackage[parfill]{parskip}
+\documentclass{Quintorthesis} 
+
+  \usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage[export]{adjustbox}
+\usepackage{booktabs}
+\usepackage{graphicx, hyperref, parskip, subcaption, float, fancyhdr, amsmath, mathtools, wrapfig, color, titlesec }
 \usepackage[dutch]{babel}
-\usepackage[natbibapa]{apacite}
+\usepackage{listings}
+\usepackage{enumitem}
 \usepackage[font={small, it}]{caption}
-\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage[natbibapa]{apacite}
+\usepackage{pdfpages}
+\usepackage[acronym]{glossaries}
+\usepackage{glossary-mcols}
+\usepackage{bookmark}
 
 \graphicspath{ {images/} }
+
+\baselineskip=15pt plus1pt
+\parskip=15pt
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{3}
+
+\renewcommand\appendixpagename{Bijlages}
+\renewcommand\appendixtocname{Bijlages}
+\newcommand{\hsp}{\hspace{10pt}}
+
+% Custom spacings for chapter, paragraph and textcolors
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{quintorred}{|}\hsp}{0pt}{\LARGE\bfseries}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titlespacing*{\paragraph}{0pt}{0pt}{10pt}
 
 % Use case definitie %
 \newcommand\tabularhead[1]{
