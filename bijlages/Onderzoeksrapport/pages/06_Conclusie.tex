@@ -1,2 +1,30 @@
 \newpage
 \chapter{Conclusie}
+
+In dit onderzoek is er gezocht naar een antwoord op de vraag: ``Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?''. Hiervoor is kwalitatief onderzoek uitgevoerd naar de Blockchain implementaties, EOS, Cardano, Monero en Bitcoin.
+
+\begin{enumerate}
+  \item \textbf{``Welke soorten gedistribueerde netwerken worden er gebruikt in de implementaties?''}
+  \\ Een gedistribueerd netwerk binnen Blockchain is getypeerd aan het consensus protocol dat gebruikt wordt. In het onderzoek zijn er twee soorten geïdentificeerd, netwerken die gebruik maken van Proof of Stake of van Proof of Work.
+
+  \item \textbf{``Hoe werken de gedistribueerde netwerken van de implementaties en tegen welke gevaren zijn ze bestendig?''}
+  \\ In het onderzoek is de functionaliteit beschreven die ondersteund wordt door een gedistribueerde netwerk van een implementatie en is er aandacht besteed aan de oplossingen die het netwerk gebruikt om aanvallen tegen te gaan. 
+  \begin{itemize}
+    \item \textbf{Bitcoin}
+    \\ Het netwerk van Bitcoin communiceert via TCP/IP en maakt gebruik van bootstrap nodes waarmee connectie wordt gemaakt op het moment dat een nieuwe deelnemer het netwerk wilt toetreden. Informatie wordt verstuurd door een voorafgedefinieerde set aan berichttypes: \textit{inv}, \textit{tx}, \textit{block}, \textit{getdata}, waarbij een \textit{inv} bericht gebruikt wordt ter inventarisatie over de beschikbaarheid van data, \textit{tx} bericht om een transactie te versturen, \textit{block} bericht om een block te versturen, \textit{getdata} bericht om data op te vragen. \\ \\ Op het Bitcoin netwerk zijn meerdere aanvallen in de loop der jaren uitgevoerd en geïdentificeerd, een studie uit 2015 gedaan door \cite{heilman2015eclipse} toont aan dat het Peer Discovery mechanisme vatbaar is voor een Sybil Attack. \cite{nakamoto2008bitcoin} stelt dat de voordelen van het uitvoeren van een majority attack niet opweegt tegen de kosten voor de benodigde hardware om de rekenkracht te behalen. \cite{eyal2014majority} beschrijft dat het niet nodig is om een merendeel van de rekenkracht te bezitten en introduceert de aanval \gls{selfish_mining}.
+
+    \item \textbf{Cardano}
+    \\ Het netwerk van Cardano communiceert via TCP/IP en maakt gebruik van het Kademlia protocol waardoor het maar nodig is om één bootstrap node te gebruiken om het netwerk toe te treden. De achterliggende structuur van Kademlia is een Binary Tree waarbij de positie van een deelnemer in de Binary Tree bepaald wordt door een unieke prefix van de identificatiecode. Het protocol garandeert dat een deelnemer in verbinding staat met ten minste één andere deelnemer. Informatie wordt uitgewisseld door drie abstracte berichttypes: \textit{inv}, \textit{req}, en \textit{data}. Het \textit{inv} bericht wordt gebruikt om aan te geven dat er data beschikbaar is, het \textit{req} bericht wordt gebruikt om beschikbare data op te vragen en het \textit{data} bericht wordt vervolgens gebruikt om de data te versturen. \\ \\ Implementaties die gebruik maken van \acrshort{PoS} zijn afhankelijk van de manier waarop een leiderschapsverkiezing wordt gesimuleerd, waarbij er grote kans is dat het gevoelig is voor beïnvloedingen van kwaadwillende deelnemers in het netwerk in de vorm van een Sybil Attack. Cardano heeft een zwak punt in het Kademlia netwerk geïdentificeerd waardoor het mogelijk zou zijn om Eclipse Attack uit te voeren.
+
+    \item \textbf{Monero}
+    \\ Het netwerk van Monero maakt gebruik van het \acrfull{I2P} protocol, dat zowel UDP/IP als TCP/IP ondersteund. Om het netwerk toe te treden wordt er gebruik gemaakt van bootstrap nodes die vastgelegd zijn in de broncode. Communicatie wordt gedaan door middel van \Glspl{tunnel}, waarbij elke deelnemer twee \Glspl{tunnel}, een inkomende en een uitgaande, heeft voor elke connectie.
+
+    \item \textbf{EOS}
+    \\ TODO
+  \end{itemize}
+
+  \item \textbf{``Hoe wordt er omgegaan met de identiteit van de gebruiker binnen de implementatie?''}
+
+\end{enumerate}
+
+

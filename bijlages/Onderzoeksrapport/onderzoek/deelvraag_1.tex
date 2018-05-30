@@ -14,7 +14,7 @@ De originele implementatie van Blockchain technologie is gepresenteerd door \cit
 
 \begin{wrapfigure}{r}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth, height=25mm]{proof-of-work}
-  \caption{Werking Proof-of-Work, van \citet{ProofofWork}. Wanneer de eerste vier bits ($Y = 4$) van de hash 0 zijn is de proef opgelost. }
+  \caption[Proof-of-Work in Bitcoin]{Werking Proof-of-Work, van \citet{ProofofWork}. Wanneer de eerste vier bits ($Y = 4$) van de hash 0 zijn is de proef opgelost. }
   \label{proof-of-work}    
 \end{wrapfigure}
 In het geval van Bitcoin is de $Y$ waarde een getal die aanduid wat de \gls{difficulty} is om de hash te berekenen en wordt de $X$ waarde incrementeel opgehoogd. Een voorbeeld is gegeven in fig. \ref{proof-of-work}. Dit proces zorgt ervoor dat de integriteit van de data in een block op de Blockchain bewaakt wordt. Wanneer een kwaadwillende deelnemer aan het netwerk de data van een block wilt aanpassen die reeds opgenomen is in de Blockchain, kan er via het \acrshort{PoW} makkelijk gevalideerd worden of het block invalide is.

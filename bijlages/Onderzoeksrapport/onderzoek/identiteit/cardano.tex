@@ -1,1 +1,13 @@
-TODO
+De cardano implementatie is een public Blockchain waarbij alle transacties inzichtbaar zijn en iedereen mee kan doen aan het consensus proces. Het maakt gebruik van public- en private keys om pseudonimiteit te waarborgen, waarbij de elliptic curve cryptografie implementatie Curve25519 toegepast wordt om de public- en private key te genereren. Binnen Cardano worden er verschillende adressen gebruikt om transacties van een bestemming te voorzien \citep[''Addresses in Cardano SL'']{cardano_wiki}:
+
+\begin{enumerate}
+  \item \textbf{public key address}
+  \\ Een base58 gecodeerde string van de public key dat gebruikt wordt als bestemming van een transactie.
+  \item \textbf{script address}
+  \\ Wordt gebruikt voor het Pay to Script Hash principe, waarbij er in plaats van de public key gebruikt wordt als bestemming, een validatie script verstuurd wordt die gebruik maakt van een zogenaamde redemption script. Om de waarde van de transactie te claimen dient het validatie script positief uit te vallen.
+  \item \textbf{redeem address}
+  \\ Wordt gebruikt voor het Pay to Public Key Hash principe, waarbij er een hash gecreëerd wordt wat ervoor zorgt dat de public key alleen publiekelijk geregistreerd wordt wanneer de output van een transactie wordt uitgegeven.
+\end{enumerate}
+
+
+

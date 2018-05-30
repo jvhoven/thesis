@@ -2,7 +2,7 @@
 Bitcoin is een netwerk waarin geen coördinerende rollen zijn. Elke deelnemer van het netwerk heeft een complete replica van alle informatie die benodigd is voor het verifiëren van de validiteit van binnenkomende transacties. Er zijn verschillende services die het netwerk faciliteert die kort toegelicht zijn in \ref{blockchain_node_types}, twee daarvan zijn met name belangrijk voor de beschrijving van het netwerk: netwerk routing, en het mining proces. In de basis van het netwerk staan de transacties die op abstract niveau bitcoins van een of meer accounts naar een of meer bestemmingsaccounts overmaken. Een \gls{account}, in de context van het bitcoin netwerk, is een combinatie van een public- en private key, waarbij de public key als identificatie van de \gls{account} gebruikt wordt. Om een transactie te versturen wordt de transactie gesigneerd met de private key van de \gls{account} die de transactie wilt uitvoeren. 
 \begin{wrapfigure}{r}{0.6\textwidth}
   \includegraphics[width=0.6\textwidth]{utxo}
-  \caption{Voorbeeld van het UTXO-model zoals in gebruik bij Bitcoin, bron: http://news.8btc.com/thoughts-on-bytom-design-extension-of-utxo-structure.}
+  \caption[UTXO-model]{Voorbeeld van het UTXO-model zoals in gebruik bij Bitcoin, bron: http://news.8btc.com/thoughts-on-bytom-design-extension-of-utxo-structure.}
   \label{utxo_model}
 \end{wrapfigure}
 
@@ -29,7 +29,7 @@ Om het het netwerk te betreden worden er DNS servers benaderd waarbij gebruik wo
 Voor het updaten en synchroniseren van de blockchain worden er \acrfull{tx} en block berichten verstuurd. Om tegen te gaan dat \acrshort{tx}- en block berichten verstuurd worden naar \glspl{node} die al afweten van deze informatie, wordt er een \textit{inv} bericht verstuurd wanneer een transactie of een block volledig geverifieerd is. Het \textit{inv} bericht bevat een lijst van transactie- en block hashes die reeds ontvangen zijn door de verstuurder en die beschikbaar zijn om opgehaald te worden. 
 \begin{wrapfigure}{r}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{bitcoin_information_propagation_0}
-  \caption{Berichten die verzonden worden om informatie over een block uit te wisselen \citep[p.~4]{6688704}.}
+  \caption[Communicatie tussen deelnemers in Bitcoin]{Berichten die verzonden worden om informatie over een block uit te wisselen \citep[p.~4]{6688704}.}
   \label{bitcoin_information_propagation_0}
 \end{wrapfigure}
 
