@@ -3,10 +3,13 @@
 
 In dit onderzoek is er gezocht naar een antwoord op de vraag: ``Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?''. Hiervoor is kwalitatief onderzoek uitgevoerd naar de Blockchain implementaties, EOS, Cardano, Monero en Bitcoin.
 
+\section{Deelvragen}
+
 \begin{enumerate}
   \item \textbf{``Welke soorten gedistribueerde netwerken worden er gebruikt in de implementaties?''}
   \\ Een gedistribueerd netwerk binnen Blockchain is getypeerd aan het consensus protocol dat gebruikt wordt. In het onderzoek zijn er twee soorten geïdentificeerd, netwerken die gebruik maken van Proof of Stake of van Proof of Work.
-
+  
+  \newpage
   \item \textbf{``Hoe werken de gedistribueerde netwerken van de implementaties en tegen welke gevaren zijn ze bestendig?''}
   \\ In het onderzoek is de functionaliteit beschreven die ondersteund wordt door een gedistribueerde netwerk van een implementatie en is er aandacht besteed aan de oplossingen die het netwerk gebruikt om aanvallen tegen te gaan. 
   \begin{itemize}
@@ -20,11 +23,66 @@ In dit onderzoek is er gezocht naar een antwoord op de vraag: ``Welke protocol i
     \\ Het netwerk van Monero maakt gebruik van het \acrfull{I2P} protocol, dat zowel UDP/IP als TCP/IP ondersteund. Om het netwerk toe te treden wordt er gebruik gemaakt van bootstrap nodes die vastgelegd zijn in de broncode. Communicatie wordt gedaan door middel van \Glspl{tunnel}, waarbij elke deelnemer twee \Glspl{tunnel}, een inkomende en een uitgaande, heeft voor elke connectie.
 
     \item \textbf{EOS}
-    \\ TODO
+    \\ \textit{Ten tijde van het onderzoek is er geen technische beschrijving beschikbaar over het netwerk component van EOS.}
   \end{itemize}
 
+  \newpage
   \item \textbf{``Hoe wordt er omgegaan met de identiteit van de gebruiker binnen de implementatie?''}
 
+  \begin{itemize}
+    \item \textbf{Bitcoin}
+    \\ Bitcoin is een public Blockchain waarbij de gehele historie van transacties publiekelijk in te zien is. Een deelnemer in het Bitcoin netwerk wordt geïdentificeerd aan de hand van zijn public key. Deze public key wordt onder andere opgenomen in transacties om de betaler en de ontvanger te registreren. In een studie gedaan door \cite{reid2013analysis} wordt er een analyse model opgezet dat aantoont dat het Bitcoin protocol niet aan de untraceability eis voldoet.
+
+    \item \textbf{Cardano}
+    \\ Cardano is een public Blockchain waarbij de gehele historie van transacties publiekelijk in te zien is. Cardano maakt gebruik van public- en private key cryptografie om pseudonimiteit te waarborgen. Deze keys worden gebruikt om een transactie van een bestemming te voorzien, waarbij er drie definities van adressen gebruikt worden: een public key address, een script address en een redeem address.
+
+    \item \textbf{EOS}
+    \\ EOS is een consortium Blockchain waarbij gebruikers zichzelf identificeren met een unieke naam van maximaal twaalf karakters. Om te participeren binnen het netwerk dient er toegang verleent te worden door een authenticatie proces alvorens de deelnemer wordt toegelaten.  Handeling binnen het netwerk worden gevalideerd door een Role Based Permissie systeem, waarbij permissies gekoppeld zijn aan actions die vastgelegd zijn in de lokale database.
+
+    \item \textbf{Monero}
+    \\ Monero is een public Blockchain waarbij de gehele historie van transacties publiekelijk in te zien is. Binnen Monero heeft elke deelnemer een account die gebaseerd is op twee keys: \gls{spend_key} en een \gls{view_key}. Door het afleiden van een eenmalige public key, ook wel een \gls{stealth_address} genoemd, uit de \gls{spend_key} en \gls{view_key} garandeert het Monero protocol unlinkability. Untraceability wordt behaald door het gebruik van \glspl{ring_signature}. Hierbij worden meerdere \glspl{stealth_address} toegevoegd aan een transactie, waarbij een afkomstig van de verstuurder van de transactie en de rest aangevuld door eerder gebruikte \glspl{stealth_address} in de Blockchain. Hierdoor wordt de herkomst van een transactie gemaskeerd.
+  \end{itemize}
 \end{enumerate}
 
+\newpage
+\section{Hoofdvraag}
+Tezamen beantwoorden de deelvragen de hoofdvraag:
 
+\begin{formal}
+  Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?
+\end{formal}
+
+\subsection{Distributed Network}
+
+Zowel het gedistribueerd netwerk van Monero, Cardano (Kademlia) en Bitcoin maken gebruik van bootstrap nodes om een deelnemer toe te laten treden, waarbij het Kademlia protocol kan functioneren met één bootstrap node.
+
+\begin{tabular}{|p{5cm}|p{10cm}|}
+  \hline
+  \textbf{Protocol} & \textbf{Toelichting} \\
+  \hline
+  Kademlia & Een bestaand protocol gerealiseerd door \cite{maymounkov2002kademlia}. Dit protocol heeft een aantal wijzigingen binnen Cardano, zoals het versturen van informatie gaat over TCP/IP en er is een uitbreiding gemaakt op de manier waarop identificatiecodes toegekend worden aan deelnemers om een mogelijke \gls{sybil_attack} uit te sluiten. \\
+  \hline
+  Bitcoin & Communicatie verloopt over TCP/IP waarbij informatie wordt verstuurd door \textit{inv}, \textit{tx}, \textit{block} en \textit{getdata} berichten. \\
+  \hline
+  Monero & Focust op de privacy van de gebruiker en maakt gebruik van \acrfull{I2P} om deze anonimiteit binnen het netwerk te waarborgen. \\
+  \hline
+\end{tabular}
+
+\subsection{Identity Management}
+
+\begin{tabular}{|p{5cm}|p{10cm}|}
+  \hline
+  \textbf{Protocol} & \textbf{Toelichting} \\
+  \hline
+  Bitcoin & Maakt gebruik van het UTXO-model, waarin public- en private keys gebruikt worden om de betaler en ontvanger te registreren binnen een transactie. Door het gebruik van het analysemodel gepresenteerd door \cite{reid2013analysis} is aangetoond dat het Bitcoin niet aan de niet aan de untraceability en unlinkability eis voldoet. \\
+  \hline
+  Cardano & Maakt gebruik van het UTXO-model, waarin public- en key cryptografie gebruikt wordt. Er is hierbij geen studie gevonden die aantoont dat het voldoet aan de untraceability en unlinkability eis, maar heeft aanzienlijke overeenkomsten met hoe Bitcoin omgaat met de identiteit. \\
+  \hline
+  EOS & Maakt gebruikt van het Account-model, waarin een gebruiker een unieke naam van maximaal twaalf karakters hanteert als identiteit. Daarnaast hanteert EOS de volgende componenten:
+  \begin{enumerate}
+    \item Role Based Permission Management
+    \item Actions \& Handlers
+  \end{enumerate}
+  \\
+  \hline
+\end{tabular}

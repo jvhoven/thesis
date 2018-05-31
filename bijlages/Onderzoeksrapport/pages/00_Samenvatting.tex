@@ -1,3 +1,39 @@
 \newpage
 \chapter*{Samenvatting}
 
+In dit onderzoeksrapport is het resultaat te vinden van het kwalitatieve onderzoek naar de Blockchain onderdelen Identity Management en Distributed Network. Binnen het onderzoek is er gekeken naar de Blockchain implementaties Bitcoin, Cardano, Monero en EOS. Aan de hand van de volgende hoofdvraag is er geinventariseerd over de gebruikte protocollen binnen de implementaties.
+
+\begin{formal}
+  Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?
+\end{formal}
+
+Samenvattend zijn de volgende protocollen geïdentificeerd voor de individuele onderdelen:
+
+\begin{tabular}{|p{5cm}|p{10cm}|}
+  \hline
+  \textbf{Protocol} & \textbf{Toelichting} \\
+  \hline
+  Kademlia & Een bestaand protocol gerealiseerd door \cite{maymounkov2002kademlia}. Dit protocol heeft een aantal wijzigingen binnen Cardano, zoals het versturen van informatie gaat over TCP/IP en er is een uitbreiding gemaakt op de manier waarop identificatiecodes toegekend worden aan deelnemers om een mogelijke \gls{sybil_attack} uit te sluiten. \\
+  \hline
+  Bitcoin & Communicatie verloopt over TCP/IP waarbij informatie wordt verstuurd door \textit{inv}, \textit{tx}, \textit{block} en \textit{getdata} berichten. \\
+  \hline
+  Monero & Focust op de privacy van de gebruiker en maakt gebruik van \acrfull{I2P} om deze anonimiteit binnen het netwerk te waarborgen. \\
+  \hline
+\end{tabular}
+
+\begin{tabular}{|p{5cm}|p{10cm}|}
+  \hline
+  \textbf{Protocol} & \textbf{Toelichting} \\
+  \hline
+  Bitcoin & Maakt gebruik van het UTXO-model, waarin public- en private keys gebruikt worden om de betaler en ontvanger te registreren binnen een transactie. Door het gebruik van het analysemodel gepresenteerd door \cite{reid2013analysis} is aangetoond dat het Bitcoin niet aan de niet aan de untraceability en unlinkability eis voldoet. \\
+  \hline
+  Cardano & Maakt gebruik van het UTXO-model, waarin public- en key cryptografie gebruikt wordt. Er is hierbij geen studie gevonden die aantoont dat het voldoet aan de untraceability en unlinkability eis, maar heeft aanzienlijke overeenkomsten met hoe Bitcoin omgaat met de identiteit. \\
+  \hline
+  EOS & Maakt gebruikt van het Account-model, waarin een gebruiker een unieke naam van maximaal twaalf karakters hanteert als identiteit. Daarnaast hanteert EOS de volgende componenten:
+  \begin{enumerate}
+    \item Role Based Permission Management
+    \item Actions \& Handlers
+  \end{enumerate}
+  \\
+  \hline
+\end{tabular}

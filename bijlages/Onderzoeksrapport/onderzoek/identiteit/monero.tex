@@ -1,1 +1,8 @@
-TODO
+De Monero implementatie is een public Blockchain waarbij alle transacties inzichtbaar zijn en elke deelnemer deel kan uitmaken van het consensus proces. De focus van de implementatie ligt op het verhogen van de privacy van een gebruiker. 
+
+Een account (i.e.\ \gls{wallet}) binnen Monero is gebaseerd op twee keys, \gls{spend_key} en een \gls{view_key}. De \gls{spend_key} is een speciale key die benodigd is om Monero effecten uit te geven, terwijl daarentegen de \gls{view_key} gebruikt kan worden om een derde partij inzicht te geven in de gedane transacties, bijvoorbeeld voor verificatie doeleinden \citep[''Account'']{moneropedia}. Bovenstaande keys zijn ook terug te vinden in de bestemmingsadres van output binnen een transactie, waarbij het bestaat uit een eenmalige public key die berekend wordt vanuit de \gls{view_key} en \gls{spend_key} \citep[''Transaction'']{moneropedia}. Door het gebruik van een eenmalige public key garandeert het Monero protocol unlinkability.
+
+Om aan de untracability eis te voldoen maakt Monero gebruik van \glspl{ring_signature}. \Gls{ring_signature} groepeerd de handtekening (i.e.\ de eenmalige public key afgeleid uit de \gls{view_key} en \gls{spend_key} ook wel bekend binnen Monero als het \gls{stealth_address}) van een deelnemer binnen een transactie met handtekeningen vanuit eerdere gedane outputs van transacties \citep[''Ring Signature'']{moneropedia}.
+
+Wanneer Bob Monero wilt versturen naar Alice, met een ring size van vijf handtekeningen, wordt een van de inputs uit Bob zijn account gehaald, welke toegevoegd wordt aan de transactie. De andere vier inputs worden uit de historie van de Blockchain gehaald. Deze vier inputs maskeren de herkomst van de transactie.
+

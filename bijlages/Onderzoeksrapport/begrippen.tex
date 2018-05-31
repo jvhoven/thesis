@@ -5,23 +5,56 @@
 
 \newglossaryentry{0-confirmation_double_spending}{
   name={0-confirmation double spending},
-  description={}
+  description={Vorm van \gls{double_spending} waarbij het validatieproces omzijlt wordt}
 }
 
 \newglossaryentry{double_spending}{
   name={double spending},
-  description={}
+  description={Aanval waarbij geprobeerd wordt om reeds uitgegeven tokens nogmaals uit te geven}
 }
 
 \newglossaryentry{miner}{
   name={miner},
-  description={},
+  description={Een deelnemer of een groep van deelnemers die verantwoordelijk zijn voor de creatie en validatie van nieuwe blocks. Miners worden doorgaans beloond voor hun services in de vorm van tokens},
   plural={miners}
+}
+
+\newglossaryentry{key_image} {
+  name={key Image},
+  plural={key Images},
+  description={Structuur dat gebruikt om een transactie met \glspl{ring_signature} te valideren}
+}
+
+\newglossaryentry{sybil_attack} {
+  name={sybil attack},
+  description={Aanval op het netwerkgedeelte van een Blockchain waarbij er virtuele deelnemers gecreëerd worden op het netwerk om ze de processen te beïnvloeden}
+}
+
+\newglossaryentry{ring_signature} {
+  name={ring signature},
+  plural={ring signatures},
+  description={Een digitale handtekening dat gebruikt wordt om een bericht mee te ondertekenen, waarbij het niet mogelijk is om terug te leiden wie het heeft ondertekend}
+}
+
+\newglossaryentry{stealth_address} {
+  name={stealth address},
+  description={Een eenmalig te gebruiken public-key die afgeleid wordt vanuit de \gls{view_key} en de \gls{spend_key}},
+  plural={Stealth Addresses}
+}
+
+\newglossaryentry{view_key}{
+  name={view key},
+  description={Onderdeel van een account in Monero en wordt gebruikt om een derde partij inzicht te geven in gedane transacties}
+}
+
+\newglossaryentry{spend_key}{
+  name={spend key},
+  description={Onderdeel van een account in Monero en is benodigd om ADA uit te geven.}
 }
 
 \newglossaryentry{bootstrap_node} {
   name={bootstrap node},
-  description={},
+  description={Vaststaande nodes waarvan hun adressen geregistreerd zijn in de broncode van de Blockchain en gebruikt worden om als eerste connectiepunt te functioneren},
   plural={bootstrap nodes}
 }
 
@@ -37,17 +70,18 @@
 
 \newglossaryentry{block_races}{
   name={block races},
-  description={}
+  description={Hiermee wordt de onderlinge competitie bedoeld van \glspl{miner}, waarbij ze ``racen'' om als eerste een block te produceren}
 }
 
 \newglossaryentry{slot_leader}{
   name={slot leader},
-  description={}
+  description={Block producer die verantwoordelijk is voor het creëren van een block},
+  plural={slot leaders}
 }
 
 \newglossaryentry{elector}{
   name={elector},
-  description={},
+  description={Groep van \glspl{node} die verantwoordelijk is voor het verkiezen van  \glspl{slot_leader}},
   plural={electors}
 }
 
@@ -58,17 +92,17 @@
 
 \newglossaryentry{stake}{
   name={stake},
-  description={}
+  description={Investering in de Blockchain proportioneel naar het type consensus, meestal gebruikt in \acrshort{PoS} implementaties}
 }
 
 \newglossaryentry{voting_power}{
   name={voting power},
-  description={}
+  description={Hoeveel zeggenschap een \gls{node} heeft in het netwerk gebaseerd op attributen als hashing power en \gls{stake}}
 }
 
 \newglossaryentry{peer_list}{
   name={peer list},
-  description={}
+  description={Lijst van \glspl{peer} waarmee connectie is gemaakt}
 }
 
 \newglossaryentry{wallet}{
@@ -79,57 +113,57 @@
 
 \newglossaryentry{fork} {
   name={fork},
-  description={},
+  description={Splitsing in het netwerk dat veroorzaakt is door een kleine wijziging in het protocol},
   plural={forks}
 }
 
 \newglossaryentry{wallet_node} {
   name={wallet (node)},
-  description={},
+  description={\Gls{node} die een gereduceerde staat van het Blockchain bevat, waarin alleen de transacties opgenomen worden die betrekking hebben op de public- en private key combinatie},
   plural={wallets}
 }
 
 \newglossaryentry{full_node} {
   name={full node},
-  description={}
+  description={\Gls{node} die alle functionaliteit kan uitvoeren die de Blockchain implementatie aanbiedt}
 }
 
 \newglossaryentry{mining_node} {
   name={mining node},
-  description={},
+  description={\Gls{node} als enige taak heeft om de rol van \gls{miner} te vervullen},
   plural={mining nodes}
 }
 
 \newglossaryentry{selfish_mining}{
   name={selfish mining},
-  description={}
+  description={Aanval waarbij er door een kwaadwillende \gls{mining_node} blocks achtergehouden worden}
 }
 
 \newglossaryentry{token}{
   name={token},
-  description={},
+  description={Abstracte term voor data die verstuurd wordt over het netwerk van de Blockchain, meestal wordt hiermee een cryptocurrency bedoeld},
   plural={tokens}
 }
 
 \newglossaryentry{difficulty}{
   name={difficulty},
-  description={Een netwerk setting dat beïnvloed hoe moeilijk om het proof-of-work op te lossen}
+  description={Een netwerk instelling dat beïnvloed hoe moeilijk het proof-of-work op te lossen is door het aanpassen van de \gls{nonce}}
 }
 
 \newglossaryentry{node}{
   name={node},
-  description={},
+  description={Computer dat in verbinding staat met het netwerk van de Blockchain},
   plural={nodes}
 }
 
 \newglossaryentry{UTXO} {
   name = {UTXO-model},
-  description = {}
+  description = {Gegevenstructuur voor transacties waarbij een transactie bestaat uit een lijst van inputs en outputs}
 }
 
 \newglossaryentry{distributed_hash_table} {
   name={Distributed Hash Table},
-  description={}
+  description={Gegevenstructuur dat gebruikt wordt in gedecentralizeerde systemen waarin efficiënte data opgezocht kan worden dat zich bevind bij een van de \glspl{peer} binnen het netwerk}
 }
 
 \newglossaryentry{soft_fork} {
@@ -145,7 +179,7 @@
 \newglossaryentry{peer} {
   name = {peer},
   plural = {peers},
-  description = {}
+  description = {Synoniem voor \gls{node}}
 }
 
 \newglossaryentry{tunnel} {
