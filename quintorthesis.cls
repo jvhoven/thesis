@@ -19,7 +19,7 @@
 \usepackage[strict]{changepage}
 \usepackage{framed}
 
-\graphicspath{ {images/}, {Bijlages/} }
+\graphicspath{ {images/}, {bijlages/} }
 
 %-------------------------- Initialize ---------------------
 \LoadClass[a4paper,11pt]{report}
@@ -64,6 +64,7 @@ keepaspectratio]{cover.jpg}%
   {\Large \bfseries \normalfont \@date}
   }
 
+  \vspace{1cm}
 {\includegraphics[width=0.35\textwidth]{quintor}}
 }
 

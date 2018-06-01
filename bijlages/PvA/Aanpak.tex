@@ -1,34 +1,46 @@
-\documentclass[a4paper,10pt]{report}
-\usepackage[utf8]{inputenc}
-\usepackage[parfill]{parskip}
-\usepackage[dutch]{babel}
-\usepackage[natbibapa]{apacite}
-\usepackage{graphicx}
+\documentclass{quintorthesis} 
+  \usepackage[utf8]{inputenc}
+  \usepackage{colortbl}
+  \usepackage[export]{adjustbox}
+  \usepackage{booktabs}
+  \usepackage{graphicx, hyperref, parskip, subcaption, float, fancyhdr, amsmath, mathtools, wrapfig, color, titlesec }
+  \usepackage[dutch]{babel}
+  \usepackage{listings}
+  \usepackage{enumitem}
+  \usepackage{amssymb}
+  \usepackage[font={small, it}]{caption}
+  \usepackage[toc,page]{appendix}
+  \usepackage[natbibapa]{apacite}
+  \usepackage{pdfpages}
+  \usepackage[acronym]{glossaries}
+  \usepackage{glossary-mcols}
+  \usepackage{bookmark}
 
-\graphicspath{ {images/} }
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
+\newcommand{\R}{\mathbb{R}}
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
 
 \begin{document}
+  \baselineskip=15pt plus1pt
+  \parskip=15pt
+  \setcounter{secnumdepth}{2}
+  \setcounter{tocdepth}{3}
+
+  \renewcommand\appendixpagename{Bijlages}
+  \renewcommand\appendixtocname{Bijlages}
+  \newcommand{\hsp}{\hspace{10pt}}
+
+  % Custom spacings for chapter, paragraph and textcolors
+  \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{quintorred}{|}\hsp}{0pt}{\LARGE\bfseries}
+  \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+  \titlespacing*{\paragraph}{0pt}{0pt}{10pt}
+  
   \begin{titlepage}
-    \begin{figure}
-      \centering
-      \includegraphics[width=90mm]{quintor}
-      \vspace{1cm}    
-    \end{figure}
-
-    {\huge\centering Plan van Aanpak \par}
-    \vspace{1cm}    
-    {\large\bfseries\centering
-      Het opzetten van een peer-to-peer netwerk met identiteit \\
-      management door middel van Blockchain technologie
-    \par}
-
-    \vfill
-
-    \begin{flushleft}
-      Jeffrey van Hoven \\
-      14068265@student.hhs.nl \\
-      \today
-    \end{flushleft}
+    \documenttype{Blockchain: Identity Management en Distributed Network} 
+    \title{Plan van Aanpak}
+    \author{Jeffrey van Hoven}
+    \date{\today}
+    \maketitle
   \end{titlepage}
 
   \newpage

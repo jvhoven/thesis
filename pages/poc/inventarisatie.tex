@@ -1,6 +1,6 @@
 \section{Inventarisatie}
 
-Zoals besproken in het adviesrapport wordt het Kademlia protocol gebruikt om de topologie van het netwerk op te zetten. Daarnaast wordt er een consortium Blockchain opgezet, waarbij de toegang tot het netwerk via het EOS permissiemodel geregeld wordt. Het versturen van de data van de Blockchain over het netwerk zal gedaan worden via \textit{data}, \textit{inv} en \textit{req} berichten, waarbij een \textit{data} bericht verstuurd wordt om bijvoorbeeld nieuwe transacties of blocks uit te wisselen, het \textit{inv} ter inventarisatie om duidelijk te krijgen of een andere deelnemer bepaalde data wilt hebben en een \textit{req} om data op te vragen.
+Zoals besproken in het adviesrapport wordt het Kademlia protocol gebruikt om de topologie van het netwerk op te zetten. Daarnaast wordt er een consortium Blockchain opgezet, waarbij de toegang tot het netwerk via een EOS geïnspireerd permissiemodel geregeld wordt. Het versturen van de data van de Blockchain over het netwerk zal gedaan worden via \textit{data}, \textit{inv} en \textit{req} berichten, waarbij een \textit{data} bericht verstuurd wordt om bijvoorbeeld nieuwe transacties of blocks uit te wisselen, het \textit{inv} ter inventarisatie om duidelijk te krijgen of een andere deelnemer bepaalde data wilt hebben en een \textit{req} om data op te vragen.
 
 \subsection{Peer-to-Peer}
 Om bovenstaande keuzes te realiseren dient eerst de basis van de architectuur gerealiseerd te worden, namelijk het \acrfull{P2P} netwerk. Er zijn een aantal keuzes mogelijk met de protocollen die het \acrshort{P2P} netwerk ondersteund.
@@ -14,41 +14,13 @@ Omdat binnen een Blockchain implementatie garantie dat een transactie geregistre
 \newpage
 \subsection{Serialisatie}
 
-Om data te versturen over het netwerk is het nodig om de entiteiten om te zetten naar een formaat dat verstuurd kan worden over \acrshort{TCP}. Hierbij zal er gekeken worden naar toepassingen die gebruikt kunnen worden op de \acrfull{JVM}.
+Om data te versturen over het netwerk is het nodig om de entiteiten om te zetten naar een formaat dat verstuurd kan worden over \acrshort{TCP}. Een de-facto standaard hiervoor is het omzetten van een entiteit naar bytes, door een proces genaamd serialiseren. Hierbij zal er gekeken worden naar toepassingen die gebruikt kunnen worden op de \acrfull{JVM}.
 
 \begin{enumerate}
   \item Java Serializable
+  \\ De standaard manier van het implementeren van serialisatie binnen Java. Door het implementeren van een interface op een klasse is het mogelijk om een object out-of-the-box te serialiseren. Wanneer er gebruik wordt gemaakt van complexere entiteiten dient de programmeur de serialisatie zelf te implementeren.
   \item Protobuf
-  \item JSON
+  \\ Protocol buffers zijn Google's programmeertaal-neutrale implementatie van serialisatie. Door het eenmalig definiëren van de structuur door middel van een proto-bestand, is het mogelijk om via de library eenvoudig complexe entiteiten om te zetten naar bytes en van bytes naar entiteit. Een voordeel van Protobuf is dat het samenwerkt met alle talen die de library ondersteund. Op dit moment zijn dat Java, Python, Objective-C en C++.
 \end{enumerate}
 
-\subsection{Opslag}
-
-De data die opgeslagen dient te worden van een Blockchain bestaat uit transacties, blocks, wallets, accounts en peer informatie. In tegenstelling tot traditionele applicaties waar de opslag gecentraliseerd wordt beheerd door een partij of organisatie, is de data in een Blockchain bij elke deelnemer lokaal opgeslagen. Relationele databases zijn ontworpen voor betrouwbare transacties en ad hoc-queries, de basisbehoeften van bedrijfstoepassingen. Maar ze komen ook met beperkingen, zoals een beperkte structuur, waardoor ze minder geschikt zijn voor andere soorten applicaties. NoSQL-databases zijn ontstaan als reactie op deze beperkingen, in NoSQL-systemen worden gegevens opgeslagen en beheert op manieren die een hoge operationele snelheid en flexibiliteit van de kant van de ontwikkelaars mogelijk maken. In tegenstelling tot SQL-databases kunnen veel NoSQL-databases horizontaal over vele servers worden geschaald.
-
-De voordelen van NoSQL komen echter niet zonder kosten. NoSQL-systemen bieden over het algemeen niet hetzelfde niveau van gegevensconsistentie als traditionele SQL-databases. Hoewel SQL-databases prestaties en schaalbaarheid hebben opgeofferd voor de ACID-eigenschappen achter betrouwbare transacties, hebben NoSQL-databases grotendeels die ACID-garanties afgedaan voor snelheid en schaalbaarheid. Net zoals in SQL heeft ook NoSQL variatie in de beschikbare implementaties. Hieronder zijn een aantal van de variaties gepresenteerd.
-
-\paragraph{Document databases} ingevoegde gegevens worden opgeslagen in de vorm va vrije JSON-structuren of "documenten", waarbij de gegevens van getallen tot tekenreeksen. Het is niet nodig om te specificeren welke velden een document zullen bevatten.
-
-\paragraph{Key-value store} slaat in de zelfde vorm op als de document database echter word de database benaderd door middel van een unieke key.
-
-\paragraph{Wide column stores} gegevens worden opgeslagen in kolommen in plaats van rijen zoals in een traditioneel SQL-systeem. Kolommen kunnen worden gegroepeerd of geaggregeerd voor zoekopdrachten of gegevensweergaven.
-
-\paragraph{Graph databases} Gegevens worden weergegeven als een netwerk of grafiek van entiteiten en hun relaties, waarbij elk knooppunt in de grafiek een stuk data is.
-
-\subsubsection{Key-value database}
-
-\paragraph{RocksDB} RocksDB is een snelle embedded, persistente key-value-opslag. RocksDB kan ook de basis zijn voor een client-serverdatabase, maar de huidige focus ligt op embedded applicaties.
-
-RocksDB bouwt op LevelDB \eqref{para:LevelDB} om schaalbaar te zijn op servers, efficiënt snelle opslag te gebruiken, in-memory en om flexibel te zijn om innovatie mogelijk te maken. RocksDB bevat de volgende eigenschappen:
-\begin{itemize}[noitemsep]
-    \item \textbf{Persistent:} data wordt veilig non-volatile opgeslagen.
-    \item \textbf{Ontworpen voor snelle opslag:} RocksDB is geoptimaliseerd om te werken op flash apparaten of als een in-memory database. Al is de performance ook goed op een schijf.
-    \item \textbf{Embedded} RocksDB is een library en kan hierdoor worden gebruikt als bouwblok voor een applicatie.
-\end{itemize}
-
-\paragraph{LevelDB}\label{para:LevelDB}
-LevelDB is een open-source, opzichzelfstaande, embedded key-value data opslag. Het is in 2011 ontwikkeld door Jeff Dean en Sanjay Ghemawat, onderzoekers van Google. Het is gebaseerd op ideeën in de BigTable implementatie van Google, maar deelt hiermee geen code. Dit is dan ook de reden waarom het een open-source licentie heeft. Dean en Ghemawat ontwikkelden LevelDB als vervanging voor SQLite als de back-store voor Chrome's IndexedDB-implementatie. Het wordt veel toegepast in het Blockchain domein en dient tevens als back-end voor een aantal nieuwe database implementaties.
-
-% TODO Keuze RocksDB, maar niet op performance
-
+Er zal gebruikt worden gemaakt van Protobuf om entiteiten binnen de Blockchain applicatie te serialiseren. Het voordeel van Protobuf, namelijk dat het samenwerkt met alle talen die de library ondersteund, zorgt ervoor dat het serialisatieproces toekomstbestendig blijft.

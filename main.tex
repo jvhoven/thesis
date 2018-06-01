@@ -20,6 +20,17 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
 
+% Gherkin definition %
+
+\lstdefinelanguage{Gherkin}{
+  keywords={When, Then, Given, And},
+  ndkeywords={Feature, Scenario},
+  sensitive=false,
+  comment=[l]{\#},
+  morestring=[b]',
+  morestring=[b]"
+}
+
 \setglossarystyle{mcolindexgroup}
 \makenoidxglossaries
 \loadglsentries{begrippen}
@@ -28,7 +39,7 @@
   \baselineskip=15pt plus1pt
   \parskip=15pt
   \setcounter{secnumdepth}{2}
-  \setcounter{tocdepth}{3}
+  \setcounter{tocdepth}{2}
 
   \renewcommand\appendixpagename{Bijlages}
   \renewcommand\appendixtocname{Bijlages}

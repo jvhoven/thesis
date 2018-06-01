@@ -1,1 +1,47 @@
 \chapter{Onderzoek}
+\textit{In dit hoofdstuk worden de werkzaamheden met betrekking tot het uitvoeren van het onderzoek beschreven. De aanleiding voor het onderzoek is te vinden in hoofdstuk \ref{Aanpak}, waarin wordt beschreven waarom dit onderzoek meerwaarde heeft binnen de opdracht.}
+
+\input{pages/onderzoek/opzet}
+
+\newpage
+\input{pages/onderzoek/soorten_netwerken}
+
+\newpage
+\input{pages/onderzoek/functionaliteit}
+
+\newpage
+\input{pages/onderzoek/identiteit}
+
+\newpage
+\section{Conclusie}
+
+In het onderzoek is er een selectie van Blockchain implementaties onderzocht op de onderdelen Identity Management en Distributed Network. Door het uitvoeren van exploratief onderzoek waarin case-study gebruikt is om een gedetailleerde omschrijving van desbetreffende onderdelen op te stellen. De hoofdvraag \textit{Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?} is opgedeeld in deelvragen:
+
+\begin{enumerate}[noitemsep]
+  \item "Welke soorten gedistribueerde netwerken worden er gebruikt?"
+  \item "Hoe werken de gedistribueerde netwerken en tegen welke gevaren zijn ze bestendig?"
+  \item "Hoe wordt er omgegaan met de identiteit van de gebruiker?
+\end{enumerate}
+
+Uit de resultaten van de deelvragen is uiteindelijk een antwoord op de hoofdvraag gekomen. Voor het onderdeel Distributed Network kan er gebruik gemaakt worden van:
+
+\paragraph{Kademlia}
+
+Een bestaand protocol gerealiseerd door \cite{maymounkov2002kademlia}. Dit protocol heeft een aantal wijzigingen binnen Cardano, zoals het versturen van informatie gaat over TCP/IP en er is een uitbreiding gemaakt op de manier waarop identificatiecodes toegekend worden aan deelnemers om een mogelijke Sybil Attack uit te sluiten.
+
+\paragraph{Bitcoin}
+
+Communicatie binnen het Bitcoin netwerk verloopt over TCP/IP waarbij informatie wordt verstuurd door inv, tx, block en getdata berichten. Het maakt gebruik van Proof of Work om consensus te bereiken over de staat van de Blockchain.
+
+\paragraph{Monero}
+
+De Monero implementatie is gefocust op het bevorderen van de privacy binnen Blockchain implementaties. Voor het netwerk is dat dan ook niet anders. Het maakt gebruik van The Invisible Project om anonimiteit in het netwerk te waarborgen.
+
+Voor het onderdeel Identity Management is het mogelijk om de volgende protocollen toe te passen:
+
+\paragraph{Bitcoin} het Bitcoin protocol maakt gebruik van het UTXO-model, waarin public- en private keys gebruikt worden om de betaler en ontvanger te registreren binnen een transactie. Door het gebruik van het analysemodel gepresenteerd door \cite{reid2013analysis} is aangetoond dat Bitcoin niet aan de untraceability en unlinkability eis voldoet.
+
+\paragraph{EOS} maakt gebruik van een account-model, waarin een gebruiker een unieke naam van maximaal twaalf karakters hanteert als identiteit. Daarnaast hanteert EOS een Role Based Permission Management systeem, waarbij het mogelijk is actions en handlers te definiëren.
+
+
+

@@ -1,0 +1,44 @@
+\subsection{Peer-to-Peer netwerk}
+
+\begin{table}[ht]
+  \begin{tabular}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+    \hline
+    \textbf{Scenarios} & UC03 - Connectie leggen deelnemer \\
+    \hline
+    \textbf{Componenten} & Node, Network \\
+    \hline
+  \end{tabular}
+  \caption[Betrokken architectuur onderdelen implementatie Peer-to-Peer netwerk]{Betrokken scenarios en componenten bij de realisatie van het Peer-to-Peer netwerk.}
+  \label{realisatie:p2p}
+\end{table}
+
+Om het Peer-to-Peer netwerk te realiseren wordt er gebruik gemaakt van het Netty framework. Netty is een client server framework die het mogelijk maakt om snel en simpel een netwerk applicatie op te zetten die gebruik maakt van een \acrshort{TCP} socket server. De voorstaande reden voor het gebruik van Netty is de ondersteuning voor asynchroon programmeren, wat benodigd is om de hoge performance te behalen die nodig is voor een Blockchain implementatie.
+
+\begin{wrapfigure}{r}{.6\textwidth}
+  \begin{lstlisting}[
+    language=Gherkin,
+    caption={Scenario vertaald naar een Cucumber test suite.},
+    label={testsuite:connect_to_participant},
+    basicstyle=\footnotesize,
+    captionpos=b
+  ]
+    Feature: Connect to participant
+    As a user
+    I want to connect to a participant
+    So that I can communicate with the participant
+
+    Scenario: Create connection
+      Given there is no connection yet
+      And I have entered the address
+      When I press enter
+      Then I should be connected with 
+
+    Scenario: Create connection with unreachable address
+      Given there is no connection yet
+      And I have entered the address
+      When I press enter
+      Then I should receive a message "unreachable address"
+  \end{lstlisting}
+\end{wrapfigure}
+
+In de basis versie van het Peer-to-Peer netwerk is het alleen nog maar mogelijk om connectie te maken met een andere gebruiker waarvan je het adres weet. Om dit te valideren is het opgestelde scenario, beschreven in fig. \ref{realisatie:p2p}, omgezet naar een cucumber test suite, te zien in listing \ref{testsuite:connect_to_participant}. Deze test suite zal gedurende de ontwikkeling van de feature gebruikt worden om de gerealiseerde werking te implementeren.

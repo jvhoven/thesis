@@ -13,9 +13,14 @@
   description={Distributed Applications -- Applicaties die gebruik maken van een Blockchain technologie, bijv. Ethereum, om op gedecentraliseerde wijze te interacteren met gebruikers}
 }
 
+\newglossaryentry{majority_attack} {
+  name={majority attack},
+  description={Een aanval waarbij meer als 51\% van de voting power in handen is van een kwaadwillende deelnemer}
+}
+
 \newglossaryentry{smart_contract} {
   name={Smart Contract},
-  description={},
+  description={Een protocol dat gebruikt wordt om een digitale onderhandeling te faciliteren, verifiëren of forceren van een contract},
   plural={Smart Contracts}
 }
 
@@ -53,17 +58,18 @@
 
 \newglossaryentry{block_races}{
   name={block races},
-  description={}
+  description={Hiermee wordt de onderlinge competitie bedoeld van \glspl{miner}, waarbij ze ``racen'' om als eerste een block te produceren}
 }
 
 \newglossaryentry{slot_leader}{
   name={slot leader},
-  description={}
+  description={Block producer die verantwoordelijk is voor het creëren van een block},
+  plural={slot leaders}
 }
 
 \newglossaryentry{elector}{
   name={elector},
-  description={},
+  description={Groep van \glspl{node} die verantwoordelijk is voor het verkiezen van \glspl{slot_leader}},
   plural={electors}
 }
 
@@ -74,17 +80,17 @@
 
 \newglossaryentry{stake}{
   name={stake},
-  description={}
+  description={Investering in de Blockchain proportioneel naar het type consensus, meestal gebruikt in \acrshort{PoS} implementaties}
 }
 
 \newglossaryentry{voting_power}{
   name={voting power},
-  description={}
+  description={Hoeveel zeggenschap een \gls{node} heeft in het netwerk gebaseerd op attributen als hashing power en \gls{stake}}
 }
 
 \newglossaryentry{peer_list}{
   name={peer list},
-  description={}
+  description={Lijst van \glspl{peer} waarmee connectie is gemaakt}
 }
 
 \newglossaryentry{wallet}{
@@ -95,35 +101,35 @@
 
 \newglossaryentry{fork} {
   name={fork},
-  description={},
+  description={Splitsing in het netwerk dat veroorzaakt is door een kleine wijziging in het protocol},
   plural={forks}
 }
 
 \newglossaryentry{wallet_node} {
   name={wallet (node)},
-  description={},
+  description={\Gls{node} die een gereduceerde staat van het Blockchain bevat, waarin alleen de transacties opgenomen worden die betrekking hebben op de public- en private key combinatie},
   plural={wallets}
 }
 
 \newglossaryentry{full_node} {
   name={full node},
-  description={}
+  description={\Gls{node} die alle functionaliteit kan uitvoeren die de Blockchain implementatie aanbiedt}
 }
 
 \newglossaryentry{mining_node} {
   name={mining node},
-  description={},
+  description={\Gls{node} die als enige taak heeft om het mining proces uit te voeren},
   plural={mining nodes}
 }
 
 \newglossaryentry{selfish_mining}{
   name={selfish mining},
-  description={}
+  description={Aanval waarbij er door een kwaadwillende \gls{mining_node} blocks achtergehouden worden}
 }
 
 \newglossaryentry{token}{
   name={token},
-  description={},
+  description={Abstracte term voor data die verstuurd wordt over het netwerk van de Blockchain, meestal wordt hiermee een cryptocurrency bedoeld},
   plural={tokens}
 }
 
@@ -134,18 +140,18 @@
 
 \newglossaryentry{node}{
   name={node},
-  description={},
+  description={Computer dat in verbinding staat met het netwerk van de Blockchain},
   plural={nodes}
 }
 
 \newglossaryentry{UTXO} {
   name = {UTXO-model},
-  description = {}
+  description = {Gegevenstructuur voor transacties waarbij een transactie bestaat uit een lijst van inputs en outputs}
 }
 
 \newglossaryentry{distributed_hash_table} {
   name={Distributed Hash Table},
-  description={}
+  description={Gegevenstructuur dat gebruikt wordt in gedecentralizeerde systemen waarin efficiënte data opgezocht kan worden dat zich bevind bij een van de \glspl{peer} binnen het netwerk}
 }
 
 \newglossaryentry{soft_fork} {
@@ -161,23 +167,23 @@
 \newglossaryentry{peer} {
   name = {peer},
   plural = {peers},
-  description = {}
+  description = {Synoniem voor \gls{node}}
 }
 
 \newglossaryentry{tunnel} {
   name = {tunnel},
   plural = {tunnels},
-  description = {}
+  description = {Communicatiekanaal zoals in gebruik bij Monero}
 }
 
 \newglossaryentry{ipv4} {
   name = {IPv4},
-  description = {}
+  description = {Vierde versie van het \acrfull{IP}}
 }
 
 \newglossaryentry{ipv6} {
   name = {IPv6},
-  description = {}
+  description = {Zesde versie van het \acrfull{IP}}
 }
 
 \newglossaryentry{OTAP} {
@@ -185,6 +191,11 @@
   description = {Best practice voor inrichting software ontwikkelstraat, waarbij er een Ontwikkelomgeving, Testomgeving, Acceptatieomgeving en Productieomgeving gehanteerd wordt}
 }
 
+\newacronym{IP}{IP}{Internet Protocol}
+\newacronym{BDD}{BDD}{Behaviour-driven development}
+\newacronym{ATDD}{ATDD}{Acceptance Test Driven Development}
+\newacronym{TDD}{TDD}{Test-driven Development}
+\newacronym{ICO}{ICOs}{Initial Coin Investment}
 \newacronym{CI}{CI}{Continuous Integration}
 \newacronym{IDE}{IDE}{Integrated Development Environment}
 \newacronym{JVM}{JVM}{Java Virtual Machine}
