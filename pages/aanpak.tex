@@ -1,34 +1,48 @@
 \chapter{Aanpak}
 \label{Aanpak}
 
-\textit{In dit hoofdstuk wordt de aanpak van de opdracht besproken. Het beschrijft de beginsituatie zoals beschreven in het afstudeerplan, in te zien in bijlage \ref{appendix:afstudeerplan}.}
+\textit{In dit hoofdstuk wordt de totstandkoming van de aanpak voor de opdracht besproken. Het gaat uit van de beginsituatie zoals beschreven in het afstudeerplan, in te zien in bijlage \ref{appendix:afstudeerplan}. Daarnaast worden de afwijkingen besproken tegenover de originele opdracht, zoals geformuleerd in hoofstuk 3.}
 
-\section{Beginsituatie}
+\section{Inventarisatie}
 
-De initiële beschrijving van de opdracht ging uit van criteria die nader gespecificeerd zou worden over aspecten van het Proof of Concept. Deze criteria zijn in de opdrachtomschrijving terug te vinden en gaan over snelheid, beveiliging en toepassingsmogelijkheden. Deze criteria zal gebruikt worden om de onderzoeksvragen op te stellen waarvan de antwoorden leiden tot de realisatie van het Proof of Concept.
+Zoals eerder besproken bevat de opdrachtomschrijving criteria die nader gespecificeerd dienen te worden. Deze criteria gaan over snelheid, beveiliging en toepassingsmogelijkheden waarbij elke invulling van deze criteria mogelijk invloed heeft op de planning en/of de aanpak van het project. Een van de belangrijkste criteria hierbij is de toepassingsmogelijkheid voor het Proof of Concept, waarbij er rekening gehouden moet worden met benodigde domeinkennis die het vooronderzoek en/of onderzoek kunnen uitbreiden. 
 
-De specificatie van deze criteria is de aanleiding geweest tot het houden van een serie gesprekken over waar Quintor heen wilt met de opdracht op het gebied van toepassingsmogelijkheden. Deze gesprekken zijn gehouden met de bedrijfsbegeleider en de Blockchain expert binnen Quintor waarbij er geprobeerd is een juiste toepassing te vinden die gerealiseerd kon worden binnen de beperkte tijd.
+Deze mogelijke implicaties zijn dan ook de aanleiding geweest tot een serie van gesprekken met de Blockchain expert en de bedrijfsbegeleider binnen Quintor, waarin er geprobeerd is een juiste toepassing te vinden die gerealiseerd kon worden binnen de beperkte tijd.
 
--- Stukje over uiteindelijk situatie e.g. --
+\subsection{Generieke Blockchain}
 
+Uit deze gesprekken is voortgekomen dat de toepassing van het Proof of Concept los staat van de uitvoering van het onderzoek, aangezien de toepassing alleen maar dient als bewijs dat de gerealiseerde Blockchain kern functioneert. De realisatie van het Proof of Concept dient dan ook gedaan te worden door het opstellen van een generieke Blockchain die inzetbaar is voor verscheidene toepassingen. 
+
+\newpage
 \section{Projectinrichting}
 
-Binnen de opdracht zal er Agile gewerkt worden. Omdat een groot gedeelte van het project bestaat uit het doen van onderzoek zijn niet alle best practices overgenomen. Per twee weken zal er een demo gedaan worden met de huidige status van het project waarbij het mogelijk is om feedback te ontvangen over blokkades of werkzaamheden die uitgevoerd dienen te worden. Daarnaast wordt er onder de afstudeerders een dagelijkse stand-up gehouden over de status van het project, welke werkzaamheden er gepland staan en of er obstakels zijn.
+Aangezien Quintor een groot voorstander is van het Agile werken zien zij ook graag het afstudeertraject in die vorm uitgevoerd worden. Tijdens de studie is er veel ervaring opgedaan met het Scrum framework dat het Agile principe ondersteund waardoor het een logische keuze is om de structuur van het project te bepalen. Omdat een groot gedeelte van het project bestaat uit het individueel uitvoeren van onderzoek zijn niet alle best practices overgenomen. 
 
-\section{Vooronderzoek} In het afstudeertraject wordt er met technologieën gewerkt welke onbekend zijn. Er is er dan ook voor gekozen om aan de hand van vooronderzoek kennis op te doen over het Blockchain domein. Er zal eerst onderzocht worden wat een Blockchain is waarna er ingegaan wordt op de toepassingen ervan. Vervolgens zal er worden gekeken naar de architectuur van de Blockchain en uit welke componenten het bestaat. Uiteindelijk zal er kennis opgedaan worden voor de onderdelen Identity Management en Distributed Network om zo een afbakening te creëren van de onderdelen. Deze kennis zal gebruikt worden, in overleg met Quintor, om de opdracht vorm te geven en inzichten op te doen over de mogelijkheden met de opdracht. 
+De rollen binnen het scrum proces \citep{schwaber2011scrum} zijn als volgt gedefinieerd:
+\begin{itemize}[noitemsep]
+  \item \textbf{Scrum Master} - Ben Ooms
+  \item \textbf{Product Owner} - Johan Tillema / Ben Ooms
+  \item \textbf{Development Team} - Jeffrey van Hoven
+\end{itemize}
 
+Een sprint zal bestaan uit twee weken waarbij aan het eind van de sprint een demo van de huidige status van het project wordt gegeven aan de afstudeerbegeleider vanuit Quintor. Tijdens dit moment is het mogelijk om advies te krijgen over de uitvoering van de werkzaamheden of blokkades waar tegenaan gelopen wordt. Daarnaast wordt er onder de afstudeerders dagelijks een stand-up gehouden waarin zaken zoals de status van het project, welke werkzaamheden gepland staan voor de dag en of er obstakels zijn besproken worden.
+
+\newpage
+\section{Vooronderzoek} In het afstudeertraject wordt er met technologieën gewerkt welke onbekend zijn. Er is er dan ook voor gekozen om aan de hand van vooronderzoek kennis op te doen over het Blockchain domein. Er zal eerst onderzocht worden wat een Blockchain is waarna er ingegaan wordt op de toepassing van de techniek. Vervolgens zal er worden gekeken naar de architectuur van de Blockchain en uit welke componenten het bestaat. Uiteindelijk zal er kennis opgedaan worden voor de onderdelen Identity Management en Distributed Network om zo een afbakening te creëren van de onderdelen. Deze kennis zal gebruikt worden, in overleg met Quintor, om de opdracht vorm te geven en inzichten op te doen over de mogelijkheden met de opdracht. 
+
+\subsection{Dataverzameling}
 Voor het opdoen van voorkennis zullen er gepubliceerde research papers, wiki’s en blogs gebruikt worden. Hierna zal er een selectie van Blockchain implementaties gemaakt worden die bestudeerd zullen worden in het onderzoek.
 
 \newpage
-\section{Onderzoek} In de opdrachtomschrijving die aangeleverd is door Quintor zijn er geen duidelijke eisen en specificaties gesteld aan zowel de uitvoering als realisatie van de afstudeeropdracht. Dit heeft ertoe geleid dat er een gesprek gehouden is met de Blockchain expert en de bedrijfsbegeleider over de eisen, afbakening en in welke mate de samenwerking met de andere afstudeerder benodigd zal zijn. Hieruit is naar voren gekomen dat er wederom geen specifieke eisen zijn en dat de afstudeerder onderzoek dient te doen naar implementaties om een zo goed mogelijk functioneel overzicht te creëren van de onderdelen die toegekend zijn. Omdat de missie van Quintor het vooroplopen op het gebied van IT ontwikkelingen is, is ervoor gekozen om literatuuronderzoek te doen.
+\section{Onderzoek} In de opdrachtomschrijving die aangeleverd is door Quintor zijn er geen duidelijke eisen en specificaties gesteld aan zowel de uitvoering als realisatie van de afstudeeropdracht. Dit heeft ertoe geleid dat er een gesprek gehouden is met de Blockchain expert en de bedrijfsbegeleider over de eisen, afbakening en in welke mate de samenwerking met de andere afstudeerder benodigd zal zijn. Hieruit is naar voren gekomen dat er wederom geen specifieke eisen zijn en dat de afstudeerder onderzoek dient te doen naar implementaties om een zo goed mogelijk functioneel overzicht te creëren van de onderdelen die toegekend zijn. Omdat de missie van Quintor het vooroplopen op het gebied van IT ontwikkelingen is, is ervoor gekozen om exploratief onderzoek uit te voeren.
 
 \subsection{Opzet}
 
 Om een zo compleet mogelijk technische beschrijving van de werkingen van de gespecificeerde onderdelen te maken wordt er kwalitatief onderzoek uitgevoerd. Er wordt onderzoek gedaan door het uitvoeren van deskresearch. Er zullen specifieke cases, implementaties van de Blockchain technologie, geselecteerd worden aan de hand van de criteria die gesteld is in ‘Inclusie- en exclusiecriteria’. 
 
-\subsection{Adviesrapport}
-
-Om in overeenstemming met de opdrachtgever een toepassing te kiezen voor de functionaliteiten en/of technieken die onderzocht zijn in de geselecteerde protocollen, zal er een adviesrapport opgesteld worden waarin deze technieken en/of technologieën aangeraden worden. 
+% \subsection{Adviesrapport}
+% TODO: Wat moet hiermee gebeuren?
+% Om in overeenstemming met de opdrachtgever een toepassing te kiezen voor de functionaliteiten en/of technieken die onderzocht zijn in de geselecteerde protocollen, zal er een adviesrapport opgesteld worden waarin deze technieken en/of technologieën aangeraden worden. 
 
 \newpage
 \section{Proof of Concept}
@@ -46,8 +60,6 @@ Voor de uitvoering van het project is een globale planning opgezet die te vinden
   \begin{tabular}{|p{6cm}|p{4cm}|p{4cm}|}
     \hline
     \textbf{Activiteit} & \textbf{Van} & \textbf{Tot} \\
-    \hline
-    Orientatie & Week 1 & Week 2 \\
     \hline
     Onderzoek & Week 3 & Week 7 \\
     \hline
