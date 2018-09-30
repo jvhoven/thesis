@@ -2,27 +2,29 @@
 \label{chapter:blockchain}
 
 \textit{
-  In dit hoofdstuk wordt de vraag  ``Wat is Blockchain technologie?" behandeld. Het betreft het vergaren van kennis over de basis van het Blockchain begrip waarbij er ingegaan wordt op wat Blockchain is en welke eigenschappen het heeft. Door het beantwoorden van deze vraag wordt er een definitie vastgesteld van Blockchain technologie die gebruikt wordt in het gehele verslag.
+  In dit hoofdstuk wordt de vraag  ``Wat is Blockchain technologie'' behandeld. Het betreft het verzamelen van kennis over de basis van het Blockchain begrip waarbij er ingegaan wordt op wat Blockchain is en welke eigenschappen het heeft. Door het beantwoorden van deze vraag wordt er een definitie vastgesteld van Blockchain technologie die gebruikt wordt in het gehele verslag.
 }
 
-Een blockchain is een gedistribueerde database die bestaat uit een keten van in de computer of op internet vastgelegde en samengevoegde gegevens genaamd blocks. Om deze reden wordt blockchain technologie ook wel vergeleken met een grootboek. In zekere mate is dit correct maar het omschrijft niet het meest vooraanstaande aspect van blockchain, namelijk dat het gedecentraliseerd opereert.
+Deze vraag heb ik opgesteld om een definitie van een Blockchain te stellen waarbij er onderzocht zal worden welke attributen deel uitmaken van de techniek. Er is allereerst gezocht naar een definitie van een Blockchain. Dit heb ik gedaan door te zoeken in informele databronnen zoals Wikipedia en de Bitcoin wiki. Uiteindelijk heb ik uit deze bronnen een definitie proberen te halen:
+\\
 
-Om de analogie voort te zetten; een grootboek is in handen van één organisatie waarin transacties van of naar de organisatie vastgelegd worden. Dit betekent dat er een centrale autoriteit is die kan bepalen of er überhaupt wel transacties plaatsvinden, of erger, het systeem buiten gebruik kan stellen. Daarnaast is de centrale autoriteit ook in staat misbruik te maken door bijvoorbeeld transacties te registreren naar de eigenaar van het grootboek. Dit brengt een risico met zich mee die blockchain technologie oplost door het grootboek te verspreiden over een netwerk dat ervoor zorgt dat deze centrale autoriteit niet meer nodig is.
+\begin{formal}
+  \label{definition:blockchain}
+  ``Een blockchain is een gedistribueerde database die bestaat uit een keten van in de computer of op internet vastgelegde en samengevoegde gegevens genaamd blocks."
+\end{formal}
 
-Een traditionele blockchain is weergegeven in fig. \ref{blockchain_reference}. De keten van gegevens wordt bepaald door de volgorde waarin de gegevens zijn toegevoegd. Er is daarbij een eenvoudig te controleren systeem volgens welke voorafgaande blokken aan elkaar gerelateerd behoren te zijn. Door de inhoud van het vorige block crypto grafisch te versleutelen (ook wel hashen genoemd) en deze sleutel op te nemen in een opeenvolgend blok wordt ervoor gezorgd dat gegevens van eerdere blokken niet meer gemuteerd kunnen worden. Wanneer dit wel gebeurt zou de ketting verbroken worden omdat er een nieuwe sleutel gegenereerd wordt en opeenvolgende blokken zullen refereren naar een foutieve sleutel.
-  
-\begin{figure}[h]
-  \includegraphics[width=1\textwidth]{figures/blockchain}
-  \caption[Blockchain structuur]{
-    Voorbeeld van een blockchain \citep{zheng2016blockchain}.
-  }
-  \label{blockchain_reference}
-\end{figure}
+In zekere mate is dit correct maar het beschrijft niet compleet het meest vooraanstaande aspect van Blockchain, namelijk dat het gedecentraliseerd opereert. In veel van de definities die ik gevonden heb, wordt Blockchain vergeleken met een grootboek. Omdat ik dit een duidelijke analogie vindt heb ik dit ook gebruikt om het concept van decentralisatie uit te leggen. Hieronder is deze analogie te vinden: 
+\\
+
+\begin{formal}
+  \label{definition:decentralisation}
+  ``Het grootboek is in handen van één organisatie waarin transacties van of naar de organisatie vastgelegd worden. Dit betekent dat er een centrale autoriteit is die kan bepalen of er überhaupt wel transacties plaatsvinden, of erger, het systeem buiten gebruik kan stellen. Daarnaast is de centrale autoriteit ook in staat misbruik te maken hiervan door bijvoorbeeld valse transacties te registreren. Dit brengt een risico met zich mee die blockchain technologie oplost door het grootboek te verspreiden over een netwerk dat ervoor zorgt dat deze centrale autoriteit niet meer nodig is, aangezien elke participant in het netwerk verantwoordelijk is voor het valideren van een transactie."
+\end{formal}
+
+Na een van de kernaspecten van de Blockchain technologie gevonden te hebben, namelijk decentralisatie, begon ik mij af te vragen of er een studie bestond die het totaalplaatje van Blockchain beschreef, inclusief de kernaspecten. Uiteindelijk ben ik via Google Scholar op de studie van \cite{zheng2017overview} terechtgekomen die een overzicht geeft van de Blockchain techniek. De paper is gepubliceerd door IEEE Xplore voor een Big Data congres, en heeft 82 citaties. Dit leek mij daarom een degelijke bron om de benodigde informatie uit te halen.
 
 \clearpage
-\subsection{Eigenschappen}
-
-\cite{zheng2017overview}[Key Characteristics of Blockchain, p.5] stelt dat er vier eigenschappen zijn die een Blockchain definiëren:
+In de studie wordt gesteld dat er vier eigenschappen zijn die een Blockchain definiëren:
 
 \paragraph{Decentralisatie} In traditionele gecentraliseerde transactie systemen wordt iedere transactie gevalideerd door een centrale vertrouwde organisatie (e.g.\ banken), waardoor er een bottleneck gecreëerd wordt door de transacties te verwerken door centrale informatiesystemen. In contrast daarmee is een derde partij niet meer nodig in blockchain systemen. Consensus algoritmes zorgen ervoor dat data consistent is binnen het netwerk.
 
@@ -31,3 +33,9 @@ Een traditionele blockchain is weergegeven in fig. \ref{blockchain_reference}. D
 \paragraph{Anonimiteit} Elke gebruiker van het systeem kan interacteren zonder zijn ware identiteit kenbaar te maken.
 
 \paragraph{Controleerbaarheid} In bitcoin wordt de balans van een gebruiker opgeslagen door gebruik te maken van het Unspent Transaction Output (UTXO) model. Elke transactie refereert naar eerdere unspent transacties. Wanneer de huidige transactie is opgenomen in de blockchain, zal de staat van alle gerefereerde transacties verandert worden van ``unspent" naar ``spent". Hierdoor zijn transacties makkelijk te valideren en te traceren.
+
+\subsection{Conclusie}
+
+De uiteindelijke conclusie van de vraag ``\textbf{Wat is Blockchain technologie?}'' is dan ook als volgt:
+
+Blockchain technologie gaat uit van vier kernprincipes: \textbf{decentralisatie}, \textbf{persistentie}, \textbf{anonimiteit} en \textbf{controleerbaarheid}. Een Blockchain is dan ook een gedistribueerde database die bestaat uit een keten van in computer of op internet vastgelegde en samengevoegde gegevens genaamd blocks. Doordat ieder van deze blocks met elkaar verbonden zijn is het niet mogelijk om informatie die reeds in het systeem is opgenomen aan te passen (persistentie). Het werkt decentraal doordat er geen één centrale vertrouwde organisatie bestaat die transacties valideren, maar alle participanten in het netwerk deel uitmaken van het validatie proces (decentralisatie). Dit gebeurt allemaal zonder je eigen identiteit bloot te stellen in het systeem (anonimiteit). Doordat alle transacties vastgelegd worden in het systeem en doorgaans publiekelijk in te zien zijn, en dus ook niet aan te passen zijn, is er de mogelijkheid om transacties makkelijk te traceren (controleerbaarheid).

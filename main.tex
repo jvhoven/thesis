@@ -15,6 +15,7 @@
 \usepackage[acronym]{glossaries}
 \usepackage{glossary-mcols}
 \usepackage{bookmark}
+\usepackage{nameref}
 
 \newcommand{\source}[1]{\caption*{Source: {#1}} }
 \newcommand{\R}{\mathbb{R}}
@@ -75,10 +76,12 @@
   \include{pages/aanpak}
   \include{pages/inventarisatie}
   \include{pages/vooronderzoek}
-  \include{pages/selectie}
+  % \include{pages/selectie}
   \include{pages/onderzoek}
   \include{pages/adviesrapport}
-  \include{pages/poc}
+  % \include{pages/poc}
+  \include{pages/ontwerp}
+  \include{pages/ontwikkelen}
   \include{pages/evaluatie}
   \include{pages/aanbevelingen}
 
@@ -90,5 +93,5 @@
   \bibliography{referenties}
 
   %now enable appendix numbering format and include any appendices
-  %\include{pages/bijlages}
+  \include{pages/bijlages}
 \end{document}

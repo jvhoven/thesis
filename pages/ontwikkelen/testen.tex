@@ -1,0 +1,50 @@
+\section{Testen}
+
+Voor het uitvoeren en opstellen van de testen heb ik een selectie gemaakt van methodieken die toepasbaar zijn in een Agile project. Hierbij zijn er naar drie mogelijke testmethodieken gekeken: \acrfull{TDD}, \acrfull{ATDD} en \acrfull{BDD}.
+
+\subsection{Test Driven Development}
+\acrshort{TDD} verwijst naar een programmeerstijl waarin drie activiteiten nauw met elkaar verweven zijn: ontwikkeling, testen (in de vorm van unit-tests) en ontwerp (in de vorm van refactoring) \citep{janzen2005test}.
+Het kan worden beschreven door met de volgende stappen:
+
+\begin{itemize}[noitemsep]
+    \item Schrijf een unit-test die een aspect van het programma beschrijft
+    \item Voer de test uit, deze faalt omdat het programma de functionaliteit mist
+    \item Schrijf code die het eenvoudigst mogelijk de test laat slagen
+    \item "Refactor" de code totdat deze voldoet aan de architectuur criteria
+    \item Herhaal de stappen
+\end{itemize}
+
+Een belangrijk voordeel van \acrshort{TDD} is dat het promoot om kleine stappen te nemen bij het realiseren van software. Stel dat bijvoorbeeld een nieuwe functionaliteit wordt toevoegt, gecompileerd en getest. De kans is groot dat bestaande testen falen door defecten in de nieuwe code. Het is veel gemakkelijker om deze gebreken te vinden en op te lossen als je twee nieuwe coderegels hebt geschreven in plaats van 2000. De implicatie is dat hoe sneller je ontwikkeld en testen uitvoert, hoe aantrekkelijker het is om in kleinere stappen te werk te gaan.
+
+\subsection{Acceptance Test Driven Development}
+\acrshort{ATDD} is een methode waarbij het hele team samen discussieert over acceptatiecriteria met voorbeelden en deze vervolgens in een reeks concrete acceptatietests verwerkt voordat de ontwikkeling begint \citep{aggarwal2014acceptance}.
+
+Deze acceptatietests vertegenwoordigen de requirements van de gebruiker en functioneren als een vorm van vereisten om te beschrijven hoe het systeem zal functioneren. Tevens dienen ze ook als een manier om te controleren of het systeem functioneert zoals bedoeld. 
+
+\subsection{Behaviour Driven Development}
+\acrshort{BDD} is een methode die zich richt op het zakelijke gedrag dat de code implementeert: het 'waarom' achter de code \citep{wynne2017cucumber}. \acrshort{BDD} is een uitbreiding van \acrshort{TDD} en \acrshort{ATDD}. Net als bij \acrshort{TDD} wordt er in \acrshort{BDD} eerst de tests geschreven en daarna de applicatiecode. Het grote verschil dat te zien is:
+
+\begin{itemize}[noitemsep]
+    \item Tests zijn geschreven in duidelijke beschrijvende taal (Nederlands, Engels, etc..)
+    \item Tests worden geschreven op de toepassing en zijn meer op de gebruiker gericht
+    \item Aan de hand van voorbeelden om de vereisten te verduidelijken
+\end{itemize}
+
+\subsection{Keuze}
+
+Uiteindelijk is de keuze gevallen op \acrshort{BDD}. Aangezien er al scenario's zijn gemaakt is het gemakkelijk om test suites op stellen conform de de regels van Cucumber. Het is dan ook een kleine moeite om dit te doen en stelt de opdrachtgever in staat om makkelijk en overzichtelijk de geïmplementeerde use cases te zien.
+
+\subsection{Frameworks}
+
+Om \acrshort{BDD} uit te voeren dienen er een aantal frameworks toegevoegd te worden aan het project. Hieronder is een overzicht gegeven van wat deze frameworks doen.
+
+\subsubsection{Cucumber}
+Cucumber is een test framework dat BDD ondersteunt \citep{wynne2017cucumber}. Met Cucumber kan het applicatie gedrag in duidelijke, betekenisvolle tekst definiëren met behulp van een eenvoudige grammatica die wordt gedefinieerd door Gherkin. Cucumber zelf is geschreven in Ruby, maar het kan worden gebruikt om code geschreven in Ruby of andere talen te `testen', inclusief maar niet beperkt tot Java/Kotlin, C\# en Python.
+
+\subsubsection{JUnit}
+JUnit is een eenvoudig, open source framework voor het schrijven en uitvoeren van unit-tests. Dit framework zal worden ingezet om de unit-testen te schrijven voor de applicatie. JUnit is de defacto standaard voor het schrijven van tests in Java en heeft hierdoor een stabiele community die snel innoveert. 
+
+\subsubsection{Continous Integration}
+
+Om de testen te koppelen aan het gebruikte versiebeheer waardoor testen automatisch uitgevoerd worden, wordt er gebruik gemaakt van \acrfull{CI}. Quintor maakt gebruik van Bamboo waarbij GitLab en Bamboo op elkaar ingesteld zijn. Om geen overbodige werkzaamheden uit te voeren is er dan ook voor gekozen om gebruik te maken van de beschikbare Bamboo omgeving.
+

@@ -10,16 +10,17 @@ Het plan van aanpak is te vinden in bijlage \ref{appendix:pva} en bevat een besc
 
 \subsection{Onderzoeksrapport}
 
-Het onderzoeksrapport is te vinden in bijlage \ref{appendix:onderzoeksrapport} en bevat het resultaat van het onderzoek met als hoofdvraag ``Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?''. Ten tijde van het opzetten van het afstudeerplan was er nog geen kennis over het Blockchain domein, en ik ben dan ook zeer tevreden met de kennis die vergaard is met het gedane onderzoek. Helaas heb ik niet alle vragen kunnen behandelen die ik in eerste instantie in gedachte had, maar niettemin bevat het een goede fundering voor kennis voor de onderdelen Identity Management en Distributed Network in de Blockchain implementaties Bitcoin, EOS, Monero en Cardano. 
+Het onderzoeksrapport is te vinden in bijlage \ref{appendix:onderzoeksrapport} en bevat het resultaat van het onderzoek met als hoofdvraag ``Welke protocol implementaties kunnen toegepast worden om de onderdelen Distributed Network en Identity Management te realiseren voor een Blockchain implementatie?''. Ten tijde van het opzetten van het afstudeerplan was er nog geen kennis over het Blockchain domein, en ik ben dan ook zeer tevreden met de kennis die vergaard is met het gedane onderzoek. Helaas heb ik niet alle vragen kunnen behandelen die ik in eerste instantie in gedachten had, maar niettemin bevat het een goede fundering voor kennis voor de onderdelen Identity Management en Distributed Network in de Blockchain implementaties Bitcoin, EOS, Monero en Cardano. 
 
 \newpage
-\subsection{Adviesrapport}
 
-Het adviesrapport is te vinden in bijlage \ref{appendix:adviesrapport} en bevat interpretaties en technologieën die geadviseerd zijn voor het ontwikkelde Proof-of-Concept. Het document adviseert over technologieën waaruit de meeste waarde gehaald kon worden voor Quintor. Helaas is tijd hierbij ook een beperkende factor gebleken en is er niet uitgebreid verteld over de verschillende technologieën. Het was wel voldoende om aan de hand van discussie met de bedrijfsbegeleider en de Blockchain expert een selectie te maken van technologieën die gerealiseerd zijn in het Proof-of-Concept.
+\subsection{Architectuurdocument}
+
+Het architectuurdocument is te vinden in bijlage \ref{appendix:architectuur} en bevat de ontwerpen van de te realiseren architectuur volgens de methode van \citep{kruchten19954+}. Ik vond het een duidelijke aanpak voor het benaderen van de architectuur van een systeem waarbij de meeste technieken overeen kwamen met de aangeleerde technieken vanuit school. Helaas heb ik niet de volledige architectuur kunnen implementeren, en dus ook niet kunnen testen of ik het correct opgesteld heb. Ik ben ervan overtuigd dat het een goede fundering beschrijft voor het realiseren van de segmenten Distributed Network en Identity Management.
 
 \subsection{Proof of Concept}
 
-Het Proof of Concept bestaat uit technologieën die in overeenstemming met Quintor geselecteerd zijn uit het adviesrapport. Het betreft het realiseren van het Kademlia protocol om te functioneren als topologie voor het netwerk. Daarnaast is er gekozen voor een consortium Blockchain waarbij een permissiemodel geïnspireerd door EOS gerealiseerd is. Informatie wordt verstuurd op de wijze waarop Cardano het doet, namelijk met het gebruik van inv, data en req berichten. Dit was een zeer ambitieuze implementatie, losstaand van het feit dat de complexiteit van de implementatie lag in de samenwerking met de onderdelen die gerealiseerd waren door Kevin Bos. Over het algemeen ben ik tevreden met de realisatie van het Proof of Concept en de totstandkoming daarop.
+Door het uitlopen van het onderzoek is er vrij weinig tijd over gebleven om het daadwerkelijke Proof of Concept te realiseren. Er is dan ook niet verder gekomen als het realiseren van het Peer to Peer netwerk met een opzet voor het versturen van berichten op de manier van Cardano. Het was in eerste instantie een ambitieuze implementatie, losstaand van het feit dat de complexiteit van de implementatie lag in de samenwerking met de onderdelen die gerealiseerd waren door Kevin Bos. Niettemin ben ik tevreden over wat ik bereikt waardoor ik toch de kern van het segment Distributed Network heb weten te realiseren.
 
 \section{Aanpak}
 
@@ -31,6 +32,8 @@ Het onderzoek is uitgevoerd door literatuurstudie waarbij geen toepassing bekend
 
 Daarnaast is het kiezen van EOS een fout geweest, dat oorzaak is geweest voor vele knelpunten in het onderzoeksproces. Dit is eigenlijk fout gegaan tijdens de selectie van implementaties en de bron die hiervoor gebruikt is. In het overzicht van coinmarketcap is mogelijk om alleen coins te tonen in plaats van de standaardweergave waarbij coins en tokens door elkaar heen weergegeven worden. Op het moment van schrijven is EOS een van de meest succesvolle \acrfull{ICO} op het moment, waarbij het geen eigen coin heeft en dus ook geen eigen Blockchain implementatie. Hierdoor is de beschikbare documentatie van het protocol (bijna) beperkt tot een technische whitepaper die toch wel wat steken laat vallen voor het begrijp technisch.
 
+Doordat er gekozen is voor exploratief onderzoek zijn er veel termen gevonden waar ik nog niet bekend mee was maar die wel nodig waren om het totaalplaatje van het onderzoek te begrijpen. Hierbij heb ik de keuze gemaakt om het vooronderzoek achteraf aan te vullen met informatie die geanalyseerd was voor de segmenten Identity Management en Distributed Network. Dit heeft ervoor gezorgd dat het onderzoek meer tijd in beslag heeft genomen dan gepland. Dit probleem komt neer op een duidelijke afbakening maken voor het onderzoek, wat ik in de toekomst dan ook zeker zal doen.
+
 \section{Beroepstaken}
 
 De beroepstaken die uitgevoerd zoals opgegeven in het afstudeerplan, in te zien in bijlage \ref{appendix:afstudeerplan}, zijn hieronder verantwoord. De complexiteit is ingedeeld naar de beschrijving van beroepstaken zoals gepresenteerd in het document ``Beroepstaken van de opleiding Informatica -- Academie voor ICT \& Media, uitgave juni 2009''.
@@ -41,6 +44,8 @@ De beroepstaken die uitgevoerd zoals opgegeven in het afstudeerplan, in te zien 
   Er zijn meerdere handelingen geweest die verantwoord kunnen worden onder deze beroepstaak. Tijdens het realiseren van het Proof of Concept zijn er zowel keuzes gemaakt op het gebied van de selectie van methoden, technieken en tools als bij het opstellen van de development workflow die gepaard ging met de realisatie. 
   
   De complexiteit van dit onderdeel komt neer op niveau 4, aangezien het zelfstandig is uitgevoerd en van voldoende complexiteit is in samenwerking met de inventarisatie van bestaande Blockchain technieken.
+
+  \clearpage
   \item \textbf{Ontwerpen systeemdeel.}
   
   Het ontwerpen van het systeemdeel betrof het modelleren van de verschillende technologieën die uit de selectie van het adviesrapport gekomen zijn. De samenwerking tussen de technologieën dient modulair te zijn zodat elk losstaand deel vervangen kan worden. Het systeem dient tevens samen te werken met componenten die gerealiseerd zijn door een andere afstudeerder. Er is hierbij gebruik gemaakt van de ontwerpmethode 4+1 architectural view model zoals beschreven door \cite{kruchten19954+}. 
@@ -55,9 +60,24 @@ De beroepstaken die uitgevoerd zoals opgegeven in het afstudeerplan, in te zien 
 
   \item \textbf{Initiëren en plannen testproces.}
 
-  Helaas is het niet meer mogelijk geweest om de kwaliteit aan te tonen door het uitvoeren van een opgesteld testplan. Binnen het architectuurdocument is er wel rekening gehouden met criteria die gesteld is aan de implementatie in de vorm van non-functional requirements. Daarnaast is er wel inventarisatie gedaan naar de mogelijkheden met betrekking tot het testen van de applicatie. Dit is beschreven in hoofdstuk \ref{ontwikkelstraat:testen}.
-  
+  Helaas is het niet meer mogelijk geweest om de kwaliteit aan te tonen door het uitvoeren van een opgesteld testplan. Binnen het architectuurdocument is er wel rekening gehouden met criteria die gesteld is aan de implementatie in de vorm van non-functional requirements. Daarnaast is er wel inventarisatie gedaan naar de mogelijkheden met betrekking tot het testen van de applicatie. Dit is beschreven in hoofdstuk \ref{testen}.
 \end{itemize}
 
+\section{Functioneren binnen Quintor}
 
+Vanaf dag één voelde ik mij zeer welkom binnen Quintor. Het bedrijf is erg betrokken bij zijn medewerkers en daarbij ook de afstudeerders en stagiaires. Het bijzondere aan afstuderen bij Quintor is dat je in een groep met afstudeerders komt. Dit is erg fijn omdat je dan nog steeds als studenten onder elkaar bent, en waarbij nodig hulp kunt verlenen aan de andere. Daarnaast was de begeleiding die aangeboden werd meer als voldoende en waren de medewerkers altijd in om mee te denken over problemen waar ik tegen aan liep. Het jammere aan afstuderen vind ik wel dat je geïsoleerd aan een opdracht werkt, waardoor je grotendeels op jezelf aangewezen bent en niet echt het bedrijfsleven ervaart. Niettemin doet Quintor er alles aan om je te betrekken bij het bedrijf. Dit doen zij door het organiseren van leuke evenementen zoals een uitje naar de verschillende festiviteiten die georganiseerd worden in Den Haag of een kennis avond over een van je favoriete onderwerpen. Tijdens de kennis avonden is er ook de gelegenheid om kennis te maken met de consultants die Quintor in dienst die normaal niet aanwezig zijn op kantoor.
+
+\section{Leerpunten}
+
+Hieronder heb ik een aantal leerpunten voor mijzelf neergezet die afkomstig zijn uit het afstudeertraject.
+
+\begin{itemize}
+  \item \textbf{Zorg ervoor dat de scope van je onderzoek duidelijk is, zodat je een afbakening kan maken. Dit zorgt ervoor dat je rekening houdt met de onvoorspelbaarheid van je onderzoek en dat waar nodig geëscaleerd kan worden.} Omdat de scope niet duidelijk was heb ik achteraf het vooronderzoek aangepast met kennis die benodigd was om de deelvragen uit het hoofdonderzoek te beantwoorden.
+  \item \textbf{Begin vanaf het begin al met het beschrijven van de uitvoering van het onderzoek, zodat je niet nogmaals je eigen onderzoek hoeft door te nemen om te achterhalen hoe je te werk bent gegaan. Analyseer hierbij je gebruikte bronnen op validiteit en toepasbaarheid binnen de context.} De uitgevoerde stappen vertalen naar concrete processtappen binnen het hoofdonderzoek zijn niet duidelijk beschreven, waarbij een analyse op de gebruikte bronnen en welke informatie geaggregeerd is niet te achterhalen is.
+  \item \textbf{Besteed meer tijd aan het duidelijk krijgen van je opdracht. Structueer hierbij je gesprekken en ga na wat je als resultaat verwacht. Wanneer dit niet zo is, bespreek dit met je begeleider.} Dit leerpunt komt voort uit de manier waarop de orientatie is gedaan in het begin van project. Hierbij zijn totaal andere resultaten gekomen als de specificatie van de criteria.
+  \item \textbf{Stel een realistisch maar compleet Plan van Aanpak op. Schets hierbij de individuele stappen tot het eindresultaat, in plaats van diep in detail doorgaan op het uitwerken van de aanpak voor specifieke aspecten van het project.} Er is veel tijd besteed aan het opzetten van een onderzoeksaanpak die eigenlijk niet gebruikt is, en later een nieuwe revisie van is opgezet.
+  
+  \newpage
+  \item \textbf{Leg afspraken over de opdracht vast met de opdrachtgever en laat het ondertekenen, zo kan de opdracht nooit veranderd worden halverwege de opdracht.} De insteek van de opdracht is naar mijn idee op twee plekken veranderd. Allereerst tijdens de orientatie, dat opgesteld was om duidelijkheid te krijgen over de niet gespecificeerde criteria. Het tweede moment is tijdens het advies gesprek, waarin wordt voorgesteld om twee verschillende aspecten van het systeem te ontwikkelen.
+\end{itemize}
 

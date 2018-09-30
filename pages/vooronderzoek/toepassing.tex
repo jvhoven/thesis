@@ -1,21 +1,27 @@
 \section{Toepassing}
 
-\textit{In dit hoofdstuk wordt de vraag ``Waarvoor wordt Blockchain technologie gebruikt?'' beantwoord. Deze vraag is opgesteld omdat er geen toepassing bekend is voor de te realiseren Blockchain onderdelen, zoals aangegeven in de beschrijving van de aanpak. Het antwoord op deze vraag dient om de opdrachtgever te informeren in wat er mogelijk is met Blockchain technologie om zo een toepassing te kiezen voor het te ontwikkelen Proof of Concept. \\ \\ Er is in het bijzonder aandacht geschonken aan Blockchain als development platform aangezien de opdrachtomschrijving, bijlage \ref{appendix:opdrachtformulering}, spreekt over de realisatie van het onderdeel Smart Contract. Uitleg over het onderdeel \glspl{smart_contract} is beperkt gebleven aangezien het buiten de scope van de opdracht valt.
-}
+\textit{In dit hoofdstuk wordt de vraag ``Waarvoor wordt Blockchain technologie gebruikt?'' beantwoord. Het antwoord op deze vraag dient om de opdrachtgever te informeren in wat er mogelijk is met Blockchain technologie om zo een toepassing te kiezen voor het te ontwikkelen Proof of Concept. \\ \\ Er is in het bijzonder aandacht geschonken aan Blockchain als development platform aangezien de opdrachtomschrijving, bijlage \ref{appendix:opdrachtformulering}, spreekt over de realisatie van het onderdeel Smart Contract. Uitleg over het onderdeel \glspl{smart_contract} is beperkt gebleven aangezien het buiten de scope van de opdracht valt.}
 
-Blockchain technologie wordt steeds vaker toegepast voor het opzetten van een gedecentraliseerd systeem. Aangezien de bekendste toepassing van blockchain technologie een financieel systeem is wordt het vaak gezien als technologie die specifiek bedoeld is om financiële diensten te ondersteunen. In de literatuur wordt er echter veel geëxperimenteerd en gespeculeerd over andere mogelijke toepassingen van blockchain technologie.
+Deze vraag is opgesteld naar aanleiding van de omwenteling van de opdracht, zoals besproken in \ref{chapter:omwenteling}. Het betreft het opstellen van een lijst van toepassingsmogelijkheden die geadviseerd kunnen worden aan Quintor, waarbij er rekening gehouden wordt met de gelimiteerde tijd. Aangezien deze vraag al extra gesteld wordt voor het adviseren van een toepassing die volgens de beschrijving van de originele opdracht gegeven had moeten worden door Quintor, heb ik bij het beantwoorden van deze vraag een limiet gesteld van twee toepassingen. Dit is mede gedaan omdat de toepassing van Blockchain technologie steeds breder wordt.
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-  \includegraphics{figures/cryptokitties}
-  \caption{CryptoKitties, een spel dat gebruik maakt van Blockchain technologie.}
-  \label{cryptokitties}
-\end{wrapfigure}
+Blockchain technologie wordt steeds vaker toegepast voor het opzetten van een gedecentraliseerd systeem. Aangezien de bekendste toepassing van Blockchain technologie een financieel systeem is, namelijk Bitcoin, wordt het vaak gezien als technologie die specifiek bedoeld is om financiële diensten te ondersteunen. In de literatuur wordt er echter veel geëxperimenteerd en gespeculeerd over andere mogelijke toepassingen van Blockchain technologie. Tijdens mijn zoektocht naar studies over de toepassingen van Blockchain buiten de financiële markt zijn er twee interessante studies gevonden.
 
-Zo stelt \citeauthor{atzori2015blockchain}, (\citeyear{atzori2015blockchain}) bijvoorbeeld dat blockchain technologie ingezet kan worden om de politiek en de maatschappij te veranderen. In een andere studie gedaan door \citeauthor{crosby2016blockchain}, (\citeyear{crosby2016blockchain}) wordt er onderscheid gemaakt tussen financiële en niet-financiële toepassingen die mogelijk veranderd kunnen worden door blockchain technologie. Een aantal voorbeelden die gegeven worden zijn de toepassingen bij verzekeringen, gedecentraliseerde opslag en domeinregistratie. In fig. \ref{cryptokitties} is een afbeelding te zien van de website van CryptoKitties, een van de eerste spellen die gebruik maakt van blockchain technologie, namelijk het Ethereum netwerk.
+\subsection{Politiek}
+Een van deze studies is gedaan door \cite{atzori2015blockchain}, waarin een interessant idee als toepassing van Blockchain technologie gepresenteerd wordt. \citeauthor{atzori2015blockchain} spreekt namelijk over ``\textit{Decentralized Goverance}'', een idee om de autoriteit van de staat over te zetten naar het Blockchain domein. Alhoewel zij met de onderstaande passage aangeeft dat er geen academische ideeën zijn voor mogelijke Blockchain gebaseerde modellen, is er wel een verzameling gemaakt van principes in de huidige politiek die aangekaart kunnen worden in een Blockchain gebaseerd model. \\
 
-\clearpage
+\begin{formal}
+  ``To date, a comprehensive discussion of possible blockchain-based models of governance
+  does not yet exist at academic level. Since a coherent and consistent body of thought on this
+  subject is missing, for the purpose of our paper we have collected information from a number
+  of sources as accurately as possible, though probably in a non-exhaustive manner."
+  \\ - \citet[][p.7]{atzori2015blockchain}
+\end{formal}
+
+Met de passage ``\textit{For the first time in history, citizens can now reach consensus and coordination at global through crytographically verified peer-to-peer procedures, without the intermediation of a third party.}'', is ter interpretatie gesteld dat het mogelijk is om bijvoorbeeld het stemproces te veranderen, waarbij zoiets als een eerste of tweede kamer overbodig zou worden.
+
 \subsection{Ontwikkelplatform}
-Blockchains als Ethereum, EOS en HyperLedger bieden hun functionaliteit aan als development platform. Het stelt ontwikkelaars in staat om hun eigen toepassingen te realiseren, zogenaamde \gls{dapps}.
+
+Een andere insteek voor het gebruik van Blockchain, waar ik zelf als developer meer ervaring mee heb, is de mogelijkheid om Blockchain te gebruiken als ontwikkelplatform. Het leek mij toepasselijk om deze toepassing te analyseren gezien in deze toepassing Blockchain als bouwsteen functioneert. Dit betekent dat het los staat van een toepassing en dat er verschillende toepassingen mee gerealiseerd kunnen worden. Om deze reden leek het mij dan ook een goede reden om het te adviseren als mogelijke ``toepassing'' voor het Proof of Concept. Blockchains als Ethereum, EOS en HyperLedger bieden hun functionaliteit aan als development platform. Het stelt ontwikkelaars in staat om hun eigen toepassingen te realiseren, zogenaamde \acrfull{DApp}.
 
 \begin{lstlisting}[
   linewidth=\textwidth, breaklines=true, 
@@ -47,7 +53,11 @@ Blockchains als Ethereum, EOS en HyperLedger bieden hun functionaliteit aan als 
     }
   }
 \end{lstlisting}
+\clearpage
+Door het gebruik van \glspl{smart_contract}, te zien in fig. \ref{smart_contract}, is het mogelijk om functionaliteit bij transacties te voegen om extra handelingen, die niet gerelateerd zijn tot de kern van een Blockchain implementatie, uit te voeren. Een bekende, controversiële toepassing die hiermee gerealiseerd is, is het spel genaamd \textbf{CryptoKitties}. Het is een spel dat gebruikt maakt van het Ethereum platform, bestaand uit verzamelbare en fokbare digitale katten. De uitwisseling en het fokken van CryptoKitties wordt vastgelegd in het Ethereum netwerk door middel van \glspl{smart_contract}. Wanneer twee CryptoKitties gefokt worden, wordt het uiterlijk en de eigenschappen van hun nageslacht bepaald door het 256-bits genoom van elke ouder en een toeval element, wat leidt tot 4 miljard mogelijke genetische variaties \citep{cryptokitties}.
 
-Door het gebruik van \glspl{smart_contract}, te zien in fig. \ref{smart_contract}, is het mogelijk om functionaliteit bij transacties te voegen om extra handelingen, die niet gerelateerd zijn tot de kern van een Blockchain implementatie, uit te voeren. Hieronder is een voorbeeld gegeven wat er mogelijk is met betrekking tot \gls{dapps}.
+\subsection{Conclusie}
 
-\paragraph{CryptoKitties} is een spel dat gebruikt maakt van het Ethereum platform, bestaand uit verzamelbare en fokbare digitale katten. De uitwisseling en het fokken van CryptoKitties wordt vastgelegd in het Ethereum netwerk door middel van \glspl{smart_contract}. Wanneer twee CryptoKitties gefokt worden, wordt het uiterlijk en de eigenschappen van hun nageslacht bepaald door het 256-bits genoom van elke ouder en een toeval element, wat leidt tot 4 miljard mogelijke genetische variaties \citep{cryptokitties}.
+Het antwoord op de vraag ``\textbf{Waarvoor wordt Blockchain technologie gebruikt?}'' is dan ook als volgt:
+
+Blockchain technologie wordt toegepast in veel domeinen. Tijdens de analyse van de vraag zijn er met name twee toepassingen bekeken, \textbf{politiek / maatschappij} en als \textbf{ontwikkelplatform}. In de politiek / maatschappij is de mogelijkheid voor het toepassen van Blockchain talloos, alleen over de daadwerkelijke toepassingen hebben de academi het hoofd nog niet gebogen. Wel zijn er principes gevonden binnen de politiek die aansluiten bij de kernprincipes van Blockchain. Daarnaast is er gekeken naar de mogelijkheid om Blockchain te gebruiken als ontwikkelplatform, waarbij er kort ingegaan is over \glspl{smart_contract}.
