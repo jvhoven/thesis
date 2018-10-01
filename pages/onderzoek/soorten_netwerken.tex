@@ -1,31 +1,28 @@
 \section{Soorten netwerken}
 
-\textit{In dit hoofdstuk wordt de vraag ``Welke soorten gedistribueerde netwerken worden er gebruikt?'' behandeld. Het doel van de vraag is om de architectuurkeuzes op het gebied van het Distributed Network onderdeel op te stellen, en waar mogelijk is de implicaties van de keuze tegenover het Identity Management onderdeel.}
+\textit{In dit hoofdstuk wordt de vraag ``Welke soorten gedistribueerde netwerken worden er gebruikt?'' behandeld. Het doel van de vraag is om de architectuurkeuzes op het gebied van het Distributed Network onderdeel op te stellen, en indien van toepassing de veranderingen hierdoor in het Identity Management onderdeel.}
 
 % In het vooronderzoek is er gevonden dat het consensusproces van grote invloed kan zijn op de architectuurkeuzes van het gedistribueerd netwerk. Er is dan ook voor gekozen om in het onderzoek het netwerksoort synoniem te stellen aan het type consensus die de implementatie gebruikt.
 
 \subsection{Aanpak}
 
-\begin{wrapfigure}[14]{r}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{figures/uitwerking_soorten}
-  \caption[Opbouw beantwoording ``Soorten netwerken'']{Termen die als leidraad gebruikt zijn om het resultaat te beschrijven}
-  \label{opbouw:netwerken}
-\end{wrapfigure}
+In het vooronderzoek heb ik gevonden dat de manier waarop overeenstemming bereikt wordt over de staat van het netwerk zeer belangrijk is binnen een Blockchain implementatie. Om deze reden heb ik dan ook de manier waarop deze overeenstemming bereikt wordt, oftewel de consensus, als leidraad gebruikt om een typering te maken voor een gedistribueerd netwerk in de geselecteerde Blockchain implementaties. Tijdens de selectie van de Blockchain implementaties is er geregistreerd wat de verschillende consensus protocollen zijn die gebruikt worden in de Blockchain implementaties:
 
-In fig. \ref{opbouw:netwerken} is te zien welke (globale) termen er gebruikt zijn om de benodigde informatie te vinden. In de meeste gevallen is de beschikbare whitepaper van de implementatie voldoende geweest om de werking van het consensus te beschrijven. Hieronder is de werkwijze en denkwijze uitgeschreven per individueel onderdeel.
+\begin{itemize}[noitemsep]
+  \item \textbf{Bitcoin} - Proof of Work
+  \item \textbf{Monero} - Egalitarian Proof of Work
+  \item \textbf{Cardano} - Proof of Stake
+  \item \textbf{EOS} - Delegated Proof of Stake
+\end{itemize}
 
-\subsubsection{Byzantine Fault Tolerance}
-Om deze vraag te beantwoorden is allereerst gezocht naar achtergrondinformatie over consensus en wat het doel ervan is. In het vooronderzoek is er informatie gevonden over het Byzantine Generals Problem \citep{lamport1982byzantine}, waarin, vertaald naar de IT-wereld, wordt gesteld dat het essentieel is voor een betrouwbaar computersysteem om te gaan met fouten in de componenten, waardoor het kan voorkomen dat er conflicterende informatie verstuurd wordt naar de andere componenten van het systeem. 
+Om deze vraag te beantwoorden is allereerst gezocht naar achtergrondinformatie over consensus en wat het doel ervan is. In het vooronderzoek is er informatie gevonden over het Byzantine Generals Problem \citep{lamport1982byzantine}, waarin, vertaald naar de IT-wereld, wordt gesteld dat het essentieel is voor een betrouwbaar computersysteem om te gaan met fouten in de componenten, waardoor het kan voorkomen dat er conflicterende informatie verstuurd wordt naar de andere componenten van het systeem. Hierna zijn bij de implementaties de manier waarop consensus behaald wordt onderzocht. Voor het beschrijven van het Proof of Work algoritme is er gebruik gemaakt van de originele presentatie van het Bitcoin protocol door \cite{nakamoto2008bitcoin}, hierin was alle informatie te vinden die benodigd was. 
 
-\subsubsection{Proof of Work}
-Hierna zijn bij de implementaties de manier waarop consensus behaald wordt onderzocht. Voor het beschrijven van het Proof of Work algoritme is er gebruik gemaakt van de originele presentatie van het Bitcoin protocol door \cite{nakamoto2008bitcoin}, hierin was alle informatie te vinden die benodigd was. Het egalitarian Proof of Work zoals in gebruik bij Monero is beschreven in \cite{van2013cryptonote} waarin de verschillen en tekortkomingen van het Proof of Work zoals in gebruik bij Bitcoin uiteengezet wordt.
+In de studie van \cite{van2013cryptonote} waarin het Monero protocol gepresenteerd wordt, wordt er ingegaan op de manier waarop Bitcoin het Proof of Work algoritme implementeerd. Er wordt met name kritiek gegeven op de ``one-CPU-one-vote'' regel die gesteld is door \citeauthor{nakamoto2008bitcoin}. Zo wordt er beargumenteerd dat omdat het Proof of Work algoritme efficienter werkt naarmate een krachtigere GPU gebruikt wordt voor het mining proces, de GPU miner meer ``voting power'' heeft als de CPU miner. Om die reden introduceert Monero egalitarian Proof of Work, een Proof of Work algoritme dat zich wel aan ``one-CPU-one-vote'' houdt.
 
-\newpage
-\subsubsection{Proof of Stake}
 Om een indicatie te geven van de grootste tekortkomingen op het gebied van Proof of Work en redenenen waarom Blockchain implementaties kiezen voor het implementeren van Proof of Stake is er gebruik gemaakt van de whitepaper van Cardano \cite{kiayias2017ouroboros}, waarin de uitgelegd wordt waarom er voor Proof of Stake is gekozen in plaats van Proof of Work. Naar aanleiding van de primaire reden, namelijk dat Proof of Work enorm veel stroom verspilt, is er gezocht naar een studie die deze claim kan bevestigen, waarbij de studie van \cite{ODwyer:Bitcoin} gebruikt is om dit te bevestigen.
 
 Bij het beschrijven van Delegated Proof of Stake zoals in gebruik bij EOS, bleek de whitepaper niet voldoende informatie te bevatten om het functioneel te beschrijven. Hiervoor is er dan ook een artikel gebruikt dat geschreven is door \cite{steemit:eos_dpos}, waarin het algoritme uitgelegd wordt.
 
 \subsection{Conclusie}
 
-Een gedistribueerd netwerk binnen Blockchain is getypeerd aan het consensus protocol dat gebruikt wordt. In het onderzoek zijn er twee primaire soorten geïdentificeerd, netwerken die gebruik maken van Proof of Stake of van Proof of Work, waarbij Proof of Work gebruik maakt van de rekenkracht van een \gls{node} en Proof of Stake gebruik maakt van de \gls{stake} van een \gls{node}.
+Een gedistribueerd netwerk binnen Blockchain is getypeerd aan het consensus protocol dat gebruikt wordt. In het onderzoek zijn er twee primaire soorten geïdentificeerd, netwerken die gebruik maken van Proof of Stake of van Proof of Work, waarbij Proof of Work gebruik maakt van de rekenkracht van een \gls{node} en Proof of Stake gebruik maakt van de \gls{stake} van een \gls{node}. Binnen de geselecteerde implementaties zijn twee gemodificeerde versies van de primaire soorten gebruikt, namelijk egalitarian Proof of Work en Delegated Proof of Stake. Bij egalitarian Proof of Work gaat het om het eerlijk houden van het mining proces, waarbij de regel ``one-CPU-one-vote'' aangehouden wordt. In delegated Proof of Stake is het grootste verschil dat in plaats van een stem uitbrengen die weegt naar jouw \gls{stake}, je een stem uitbrengt op vaste vertegenwoordigers die verantwoordelijk zijn voor het creëren van een nieuw block.
